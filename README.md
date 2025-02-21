@@ -30,6 +30,6 @@ El repositorio está compuesto por varias carpetas:
 
 ### 📁 [Esquemas visuales](https://github.com/nicgrefer/Pracica2-Parking/tree/main/Esquemas%20visuales)  
 
-📌 Contiene `canvas` o imágenes relacionadas con el planteamiento de cada `clase` o `función`.  
+📌 Contiene `canvas`(atizando `Obsidian` para su creación) o imágenes relacionadas con el planteamiento de cada `clase` o `función`.  
 
 ---
