@@ -1,4 +1,6 @@
 # 🚗 Práctica de Programación → Parking  
+![GitHub last commit](https://img.shields.io/github/last-commit/nicgrefer/Pracica2-Parking)![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=flat&logo=openjdk&logoColor=white)
+
 
 ## 📌 Introducción  
 
