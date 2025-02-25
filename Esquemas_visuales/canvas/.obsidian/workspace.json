@@ -15,8 +15,8 @@
               "state": {
                 "file": "Sin título.canvas",
                 "viewState": {
-                  "x": 0,
-                  "y": 0,
+                  "x": -65,
+                  "y": -40,
                   "zoom": 0
                 }
               },
@@ -173,7 +173,9 @@
   },
   "active": "c82748086aad3954",
   "lastOpenFiles": [
+    "Captura.png",
     "Sin título.canvas",
+    "Sin título.md",
     "Bienvenido.md"
   ]
 }
