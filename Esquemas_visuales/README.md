@@ -28,7 +28,7 @@ La **`Maquina`** tendra acceso a :
 |ArrayList| Almacena los `tiquets` generados|
 | `Plano del camping` | Matriz en el que se ve la disponibilidad del parquing (poniendo 0 donde esta bacio y si esta ocupado aparece el **ID** del tiquet)|
 
-![Ejemplo diseño](Captura.PNG)
+![Ejemplo diseño](anexos/Captura.PNG)
 
 ## Tiquet
 
