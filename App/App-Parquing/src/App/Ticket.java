@@ -4,10 +4,15 @@
  */
 package App;
 
+import java.time.LocalDateTime;
+
 /**
  *@author jovcubni
  * @author Andrei
  */
 public class Ticket {
+    private static int id;
+    private String matricula;
+    private LocalDateTime fecha_hora;
     
 }
