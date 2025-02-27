@@ -5,7 +5,7 @@
 package App;
 
 /**
- *
+ *@author jovcubni
  * @author Andrei
  */
 public class Terminal extends javax.swing.JFrame {

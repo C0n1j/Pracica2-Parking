@@ -5,7 +5,7 @@
 package sucio;
 
 /**
- *
+ *@author Andrei
  * @author jovcubni
  */
 public class pruebasç {
