@@ -3,11 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package App;
-
+import java.util.Arrays;
 /**
  *@author jovcubni
  * @author Andrei
  */
+
 public class Ubicacion {
     private int planta;
     private int plaza;
@@ -25,9 +26,16 @@ public class Ubicacion {
         return plaza;
     }
 
+    public void setPlanta(int planta) {
+        this.planta = planta;
+    }
+
+    public void setPlaza(int plaza) {
+        this.plaza = plaza;
+    }
+
     @Override
     public String toString() {
-        return "Ubicacion{" + "planta=" + planta + ", plaza=" + plaza + '}';
+        return "piso=" + planta + ", plaza=" + plaza;
     }
-    
 }

@@ -12,10 +12,23 @@ import java.time.LocalDateTime;
  */
 public class AppPruebas {
     public static void main(String[] args) {
-        Ticket tiket1= new Ticket("6662DTR", LocalDateTime.MAX, 0, 0);
-        Ticket tiket2= new Ticket("6374ACR", LocalDateTime.MAX, 0, 1);
-        
-        System.out.println(tiket1);
-        System.out.println(tiket2);
+        Plano parking = new Plano();
+
+        // Estacionar dos vehículos
+        Ticket t1 = new Ticket("1234-ABC", LocalDateTime.now(), parking);
+        Ticket t2 = new Ticket("9999-ZZZ", LocalDateTime.now(), parking);
+
+        // Mostrar tickets
+        System.out.println(t1);
+        System.out.println(t2);
+
+        // Mostrar el parking
+        parking.mostrarParking();
+
+        // Retirar un vehículo
+        parking.liberar(t1.getId());
+
+        // Mostrar parking actualizado
+        parking.mostrarParking();
     }
 }
