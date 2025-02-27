@@ -8,11 +8,11 @@ package App;
  *@author jovcubni
  * @author Andrei
  */
-public class Ubucacion_planta {
+public class Ubicacion {
     private int planta;
     private int plaza;
 
-    public Ubucacion_planta(int planta, int plaza) {
+    public Ubicacion(int planta, int plaza) {
         this.planta = planta;
         this.plaza = plaza;
     }
@@ -27,7 +27,7 @@ public class Ubucacion_planta {
 
     @Override
     public String toString() {
-        return "Ubucacion_planta{" + "planta=" + planta + ", plaza=" + plaza + '}';
+        return "Ubicacion{" + "planta=" + planta + ", plaza=" + plaza + '}';
     }
     
 }
