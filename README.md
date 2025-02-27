@@ -14,17 +14,10 @@ El repositorio está compuesto por varias carpetas:
 
 ---
 
-### 📁 [App definitiva](https://github.com/nicgrefer/Pracica2-Parking/tree/main/App%20definitiva)  
+### 📁 [App ](https://github.com/C0n1j/Pracica2-Parking/tree/main/App)  
 
-📌 Contiene el proyecto final con todas las clases y completamente funcional.  
+📌 Contiene el proyecto final con todas las clases
 
----
-
-### 📁 [Clases por separado](https://github.com/nicgrefer/Pracica2-Parking/tree/main/Clases%20por%20separadas)  
-
-📌 En esta carpeta se suben cada `clase` por separado, ya que esta práctica se realiza en parejas.  
-
----
 
 ### 📁 [Enunciado y control del tiempo](https://github.com/nicgrefer/Pracica2-Parking/tree/main/Enunciado%20y%20contro%20del%20tiempo)  
 
@@ -32,7 +25,7 @@ El repositorio está compuesto por varias carpetas:
 
 ---
 
-### 📁 [Esquemas visuales](https://github.com/nicgrefer/Pracica2-Parking/tree/main/Esquemas%20visuales)  
+### 📁 [Esquemas visuales](https://github.com/C0n1j/Pracica2-Parking/tree/main/Esquemas_visuales)  
 
 📌 Contiene `canvas`(atizando `Obsidian` para su creación) o imágenes relacionadas con el planteamiento de cada `clase` o `función`.  
 
