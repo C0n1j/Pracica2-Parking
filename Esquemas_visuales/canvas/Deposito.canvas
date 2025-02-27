@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"72d4230fd9bc6809","type":"text","text":"**Métodos principales**:\n\n- `realizarPago(precio, pago)`: Verifica si el pago es suficiente y llama a `proporcionarCambio(cambio)`.\n- `proporcionarCambio(cambio)`: Intenta devolver el cambio usando `TipoMoneda`.\n- Usa `TipoMoneda.agregarMoneda(pago, 1)` para añadir el dinero recibido.","x":-792,"y":-520,"width":390,"height":320,"color":"6"},
+		{"id":"76a6c837927d2857","x":-389,"y":-160,"width":601,"height":320,"color":"3","type":"text","text":"📌 **Dependencia**: `Deposito` **necesita** un `TipoMoneda` para gestionar el dinero.  \n📌 **Asociación**: `Deposito` **tiene un objeto** `TipoMoneda` como atributo privado.  \n📌 **Interacción**:\n\n- `Deposito` usa `TipoMoneda` para **almacenar el pago**.\n- `Deposito` consulta `TipoMoneda` para **verificar si hay suficiente cambio**.\n- `Deposito` retira dinero de `TipoMoneda` al **proporcionar el cambio**."},
+		{"id":"09581e01e0e7b56f","type":"text","text":"**Atributos**\n- `precio`: Precio del producto.\n- `pago`: Cantidad que el usuario entrega.\n- `deposito`: Objeto de tipo `TipoMoneda` (almacén de monedas y billetes).","x":212,"y":-510,"width":250,"height":300,"color":"2"},
+		{"id":"8931098ae4120bc6","type":"text","text":"Deposito","x":-158,"y":-390,"width":140,"height":60,"color":"4"}
+	],
+	"edges":[
+		{"id":"2ce090b42652a61d","fromNode":"8931098ae4120bc6","fromSide":"left","toNode":"72d4230fd9bc6809","toSide":"right"},
+		{"id":"dbeea972fa59f870","fromNode":"8931098ae4120bc6","fromSide":"right","toNode":"09581e01e0e7b56f","toSide":"left"},
+		{"id":"31d6973647032e0f","fromNode":"8931098ae4120bc6","fromSide":"bottom","toNode":"76a6c837927d2857","toSide":"top"}
+	]
+}

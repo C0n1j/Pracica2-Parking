@@ -4,24 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "85a637b41aa0b38e",
+        "id": "b2dafb38c98cfa40",
         "type": "tabs",
         "children": [
           {
-            "id": "139af75a6baa50d4",
+            "id": "9e93bacf8997ad83",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Sin título.canvas",
+                "file": "Deposito.canvas",
                 "viewState": {
-                  "x": -65,
-                  "y": -40,
-                  "zoom": 0
+                  "x": -132.48422229959678,
+                  "y": -187.03195938598495,
+                  "zoom": -1.1102230246251565e-16
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Sin título"
+              "title": "Deposito"
             }
           }
         ]
@@ -171,11 +171,13 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "c82748086aad3954",
+  "active": "9e93bacf8997ad83",
   "lastOpenFiles": [
-    "Captura.png",
-    "Sin título.canvas",
+    "Tipo Monedas.canvas",
+    "Deposito.canvas",
+    "Nuevo documento de texto.canvas",
     "Sin título.md",
+    "Captura.png",
     "Bienvenido.md"
   ]
 }
