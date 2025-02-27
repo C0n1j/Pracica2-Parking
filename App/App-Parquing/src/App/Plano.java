@@ -4,19 +4,33 @@
  */
 package App;
   import java.util.Arrays;
+// TODO: Auto-generated Javadoc
+
 /**
+ * The Class Plano.
+ *
  * @author jovcubni
  * @author Andrei
  */
 public class Plano {
 
 
+    /** The plazas. */
     private int[][] plazas; //3 plantas
 
+    /**
+     * Instantiates a new plano.
+     */
     public Plano() {
         plazas = new int[3][20]; //plazas vacias
     }
 
+    /**
+     * Estacionar.
+     *
+     * @param ticketId the ticket id
+     * @return the ubicacion
+     */
     // Busca la primera plaza libre y devuelve una Ubicacion
     public Ubicacion estacionar(int ticketId) {
         for (int planta = 0; planta < plazas.length; planta++) {
@@ -30,6 +44,12 @@ public class Plano {
         return null; // Parking lleno
     }
 
+    /**
+     * Liberar.
+     *
+     * @param ticketId the ticket id
+     * @return true, if successful
+     */
     // Libera una plaza cuando el coche se va
     public boolean liberar(int ticketId) {
         for (int planta = 0; planta < plazas.length; planta++) {
@@ -43,6 +63,9 @@ public class Plano {
         return false; 
     }
 
+    /**
+     * Mostrar parking.
+     */
     public void mostrarParking() {
         System.out.println("Plano del Parking:");
         for (int[] planta : plazas) {
