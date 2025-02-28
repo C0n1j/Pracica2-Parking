@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"d2a2e2605641478b","x":280,"y":0,"width":720,"height":160,"color":"2","type":"text","text":"### **Atributos**\n\n- `plazas` (`int[][]`): Matriz que representa las plazas del estacionamiento (3 plantas, 20 plazas por planta)."},
+		{"id":"910a7e82bb2e632b","x":-920,"y":-25,"width":720,"height":285,"color":"6","type":"text","text":"### **Métodos**\n\n- `Plano()`: Constructor que inicializa la matriz de plazas vacías.\n- `estacionar(int ticketId)`: Encuentra la primera plaza libre, la ocupa con el `ticketId` y devuelve una `Ubicacion`. Retorna `null` si el estacionamiento está lleno.\n- `liberar(int ticketId)`: Busca un ticket en el estacionamiento y libera la plaza si lo encuentra.\n- `mostrarParking()`: Imprime el estado actual del estacionamiento."},
+		{"id":"3fbce8d4e858025f","x":-320,"y":360,"width":775,"height":520,"color":"3","type":"text","text":"### **Dependencias**\n\n- `java.util.Arrays`: Para imprimir la matriz del estacionamiento.\n- `Ubicacion`: Se usa para devolver la ubicación de un vehículo estacionado.\n\n### **Asociaciones**\n\n- **Composición con `Ubicacion`**: `Plano` crea instancias de `Ubicacion` cuando un vehículo es estacionado.\n- **Uso de una estructura de datos (`int[][]`)**: Representa las plazas del estacionamiento.\n\n### **Interacción**\n\n- `estacionar()` interactúa con `Ubicacion` para registrar posiciones de vehículos.\n- `liberar()` modifica la matriz `plazas` para indicar una plaza vacía.\n- `mostrarParking()` imprime el estado actual del estacionamiento."},
+		{"id":"8fd07ae8efdd2a24","x":-57,"y":118,"width":250,"height":60,"color":"4","type":"text","text":"Plano"}
+	],
+	"edges":[
+		{"id":"c5f1d2683e5931e2","fromNode":"8fd07ae8efdd2a24","fromSide":"bottom","toNode":"3fbce8d4e858025f","toSide":"top"},
+		{"id":"488cd9ffdf012d9b","fromNode":"8fd07ae8efdd2a24","fromSide":"right","toNode":"d2a2e2605641478b","toSide":"left"},
+		{"id":"8d662111f85b3adc","fromNode":"8fd07ae8efdd2a24","fromSide":"left","toNode":"910a7e82bb2e632b","toSide":"right"}
+	]
+}

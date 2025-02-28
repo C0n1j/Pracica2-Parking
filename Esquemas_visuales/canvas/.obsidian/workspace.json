@@ -4,30 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "cf94a2ae62c08116",
+        "id": "d42b0f4ef82daaaa",
         "type": "tabs",
         "children": [
           {
-            "id": "33ba902edcebce0a",
+            "id": "14679d0372d4e6ff",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Ticket.canvas",
+                "file": "Plano.canvas",
                 "viewState": {
-                  "x": 20.571605999485257,
-                  "y": 197.1297918471415,
-                  "zoom": -1.463986559096172
+                  "x": -2.9604468423586816,
+                  "y": 456.0646138061361,
+                  "zoom": -1.6991589446862534
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Ticket"
+              "title": "Plano"
             }
           }
         ]
       },
       {
-        "id": "d42b0f4ef82daaaa",
+        "id": "364c6966ff28ac00",
         "type": "tabs",
         "children": [
           {
@@ -195,10 +195,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "33ba902edcebce0a",
+  "active": "14679d0372d4e6ff",
   "lastOpenFiles": [
-    "Ticket.canvas",
+    "Plano.canvas",
     "Deposito.canvas",
+    "Ticket.canvas",
     "Ubicacion.canvas",
     "Tipo Monedas.canvas",
     "Nuevo documento de texto.canvas",
