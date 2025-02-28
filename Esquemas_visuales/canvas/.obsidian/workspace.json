@@ -4,30 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "b2dafb38c98cfa40",
+        "id": "cf94a2ae62c08116",
         "type": "tabs",
         "children": [
           {
-            "id": "9e93bacf8997ad83",
+            "id": "33ba902edcebce0a",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Deposito.canvas",
+                "file": "Ticket.canvas",
                 "viewState": {
-                  "x": -145.48422229959678,
-                  "y": -149.03195938598498,
-                  "zoom": -0.7959018473823865
+                  "x": 20.571605999485257,
+                  "y": 197.1297918471415,
+                  "zoom": -1.463986559096172
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Deposito"
+              "title": "Ticket"
             }
           }
         ]
       },
       {
-        "id": "cf94a2ae62c08116",
+        "id": "d42b0f4ef82daaaa",
         "type": "tabs",
         "children": [
           {
@@ -195,10 +195,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9e93bacf8997ad83",
+  "active": "33ba902edcebce0a",
   "lastOpenFiles": [
-    "Ubicacion.canvas",
+    "Ticket.canvas",
     "Deposito.canvas",
+    "Ubicacion.canvas",
     "Tipo Monedas.canvas",
     "Nuevo documento de texto.canvas",
     "Sin título.md",

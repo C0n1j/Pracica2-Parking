@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"050fe3e8dff9e50c","type":"text","text":"Ticket","x":-140,"y":-120,"width":250,"height":60,"color":"4"},
+		{"id":"b93699bce34c9e29","type":"text","text":"### **Métodos**\n\n- `Plano()`: Constructor que inicializa la matriz de plazas vacías.\n- `estacionar(int ticketId)`: Encuentra la primera plaza libre, la ocupa con el `ticketId` y devuelve una `Ubicacion`. Retorna `null` si el estacionamiento está lleno.\n- `liberar(int ticketId)`: Busca un ticket en el estacionamiento y libera la plaza si lo encuentra.\n- `mostrarParking()`: Imprime el estado actual del estacionamiento.","x":-1000,"y":-200,"width":780,"height":280,"color":"6"},
+		{"id":"92dda5d90a628084","x":200,"y":-185,"width":592,"height":250,"color":"2","type":"text","text":"### **Atributos**\n\n- `contador` (`static int`): Lleva la cuenta de los tickets generados.\n- `id` (`int`): Identificador único del ticket.\n- `matricula` (`String`): Matrícula del vehículo.\n- `fecha_hora` (`LocalDateTime`): Fecha y hora de emisión del ticket.\n- `ubicacion` (`Ubicacion`): Ubicación asignada al vehículo."},
+		{"id":"99ddf4ed53abb413","x":-320,"y":120,"width":960,"height":600,"color":"3","type":"text","text":"### **Dependencias**\n\n- `java.time.LocalDateTime` y `java.time.format.DateTimeFormatter`: Para gestionar la fecha y hora del ticket.\n- `Ubicacion`: Se usa para almacenar la posición del vehículo.\n- `Plano`: Se usa para estacionar un vehículo al crear un ticket.\n\n### **Asociaciones**\n\n- **Agregación con `Ubicacion`**: `Ticket` contiene una referencia a una `Ubicacion`, pero no la crea directamente (la obtiene de `Plano`).\n- **Dependencia con `Plano`**: `Ticket` necesita a `Plano` para asignar una plaza en el estacionamiento.\n\n### **Interacción**\n\n- Cuando se crea un `Ticket`:\n    - Se genera un ID único.\n    - Se asigna una ubicación usando `Plano.estacionar(id)`.\n    - Si no hay plazas disponibles, se muestra un mensaje.\n- Se puede obtener información del ticket con `getId()`, `getMatricula()`, y `getFecha_hora()`.\n- Se puede imprimir la información completa con `toString()`."}
+	],
+	"edges":[
+		{"id":"0a4851008df4d7be","fromNode":"050fe3e8dff9e50c","fromSide":"left","toNode":"b93699bce34c9e29","toSide":"right"},
+		{"id":"5f01a671e173e0bb","fromNode":"92dda5d90a628084","fromSide":"left","toNode":"050fe3e8dff9e50c","toSide":"right"},
+		{"id":"475c40dc0d07fe53","fromNode":"050fe3e8dff9e50c","fromSide":"bottom","toNode":"99ddf4ed53abb413","toSide":"top"}
+	]
+}
