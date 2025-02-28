@@ -1,4 +1,4 @@
-package sucio;
+package App;
 
 import javax.swing.JProgressBar;
 import javax.swing.GroupLayout;
