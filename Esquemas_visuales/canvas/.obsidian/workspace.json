@@ -17,7 +17,30 @@
                 "viewState": {
                   "x": -145.48422229959678,
                   "y": -149.03195938598498,
-                  "zoom": -1.1102230246251565e-16
+                  "zoom": -0.7959018473823865
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Deposito"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cf94a2ae62c08116",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4a878f08087013db",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Deposito.canvas",
+                "viewState": {
+                  "x": -165,
+                  "y": -180,
+                  "zoom": -1.0267031561999143
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -47,7 +70,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
+              "title": "Files"
             }
           },
           {
@@ -81,7 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "right": {
@@ -164,18 +187,19 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
     }
   },
   "active": "9e93bacf8997ad83",
   "lastOpenFiles": [
-    "Tipo Monedas.canvas",
+    "Ubicacion.canvas",
     "Deposito.canvas",
+    "Tipo Monedas.canvas",
     "Nuevo documento de texto.canvas",
     "Sin título.md",
     "Captura.png",
