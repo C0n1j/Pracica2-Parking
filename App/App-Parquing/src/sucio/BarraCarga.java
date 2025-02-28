@@ -3,11 +3,11 @@ package sucio;
 import javax.swing.JProgressBar;
 import javax.swing.GroupLayout;
 
-public class NewJFrame extends javax.swing.JFrame {
+public class BarraCarga extends javax.swing.JFrame {
 
     private JProgressBar progressBar; // Declaración de la barra de progreso
 
-    public NewJFrame() {
+    public BarraCarga() {
         initComponents();
     }
 
@@ -46,7 +46,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(() -> {
-            NewJFrame frame = new NewJFrame();
+            BarraCarga frame = new BarraCarga();
             frame.setVisible(true);
 
             // Simulación de carga (bucle para actualizar la barra)
