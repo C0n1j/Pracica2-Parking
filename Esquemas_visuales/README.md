@@ -1,11 +1,11 @@
 # Clases necesarias
 
-  - Principal
-  - Maquina
-  - Terminal
-  - Tiket
-  - Ubiacion planta (mapa de parquing)
-  - Deposito
+- [ ] Principal
+- [ ] Maquina
+- [ ] Terminal
+- [x] Tiket
+- [x] Ubiacion planta (mapa de parquing)
+- [x] Deposito
 
 # Distribución
 
