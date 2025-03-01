@@ -48,16 +48,16 @@ public class Maquina {
         double total = minutos * precioPorMinuto;
         if (minutos == 0) total = precioPorMinuto; // Mínimo 1 minuto de cobro
 
-        System.out.println("💰 Total a pagar: " + total + "€");
+        System.out.println(" Total a pagar: " + total + "€");
 
         if (!deposito.realizarPago(total, cantidadIntroducida)) {
-            System.out.println("🚫 Error en el pago.");
+            System.out.println(" Error en el pago.");
             return false;
         }
 
         parking.liberar(ticketId);
         tickets.remove(ticket);
-        System.out.println("✅ Vehículo retirado.");
+        System.out.println(" Vehículo retirado.");
         return true;
     }
 
