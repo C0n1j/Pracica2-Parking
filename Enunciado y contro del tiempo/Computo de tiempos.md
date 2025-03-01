@@ -7,4 +7,4 @@
 |Representacion tiket+plano+ubicacion|Andrei|||15m|
 |Maquina|Andrei||01/03/2025/12:05|01/03/2025/13:30|1h25|
 |Principal|Andrei|01/03/2025/14:50|01/03/2025/15:20|30min|
-|Esquemas Maquina y Principal|01/03/2025/15:30|01/03/2025/16:15|45min|
+|Esquemas Maquina y Principal|Andrei|01/03/2025/15:30|01/03/2025/16:15|45min|
