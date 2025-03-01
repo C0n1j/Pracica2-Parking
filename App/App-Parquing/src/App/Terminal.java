@@ -4,8 +4,11 @@
  */
 package App;
 
+import App.RecursoBarraCarga.BarraCarga;
 import App.Tiket_Plazas.Ticket;
+import java.time.Duration;
 import java.time.LocalDateTime;
+import java.util.Date;
 import javax.swing.JOptionPane;
 
 /**
@@ -16,6 +19,8 @@ public class Terminal extends javax.swing.JFrame {
 
     
     public Maquina maquina = new Maquina(0.50);
+    public Ticket tiket;
+
     /**
      * Creates new form Terminal
      */
@@ -50,6 +55,11 @@ public class Terminal extends javax.swing.JFrame {
         PagoYmas.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         BotonPagar.setText("Pagar");
+        BotonPagar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonPagarActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("A pagar --->");
 
@@ -172,15 +182,80 @@ public class Terminal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Tiket1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Tiket1ActionPerformed
-        // TODO add your handling code here:
         String matricula= Matricula.getText();
         if (matricula.isEmpty()){
-            JOptionPane.showMessageDialog(this, "No puede ser nula","Nota",2);
-        }else {
-            maquina.generarTicket(matricula);
-            JOptionPane.showMessageDialog(this,maquina.generarTicket(matricula), "Tiket", HEIGHT);
+            JOptionPane.showMessageDialog(this, "No puede ser nula", "Nota", JOptionPane.WARNING_MESSAGE);
+        } else {
+            Ticket ticket = maquina.generarTicket(matricula);
+            if (ticket != null) {
+                JOptionPane.showMessageDialog(this, "✅ Ticket generado: " + ticket, "Ticket", JOptionPane.INFORMATION_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(this, "🚫 No hay espacio disponible en el parking.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
         }
     }//GEN-LAST:event_Tiket1ActionPerformed
+
+    private void BotonPagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPagarActionPerformed
+        LocalDateTime salida = LocalDateTime.now();
+        double precioPorMinuto=0.50;
+        String tiketId = JOptionPane.showInputDialog(this, "Introduce el ID del ticket: ");
+         if (tiketId == null || tiketId.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "No puede ser nula", "Nota", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        
+        int tiketNum;
+        try {
+            tiketNum = Integer.parseInt(tiketId);
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "ID del ticket inválido", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        
+        if (tiketNum < 0 || tiketNum > Ticket.getContador()) { 
+            JOptionPane.showMessageDialog(this, "Fuera de rango", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+
+        Ticket ticket = maquina.buscarTicket(tiketNum);
+        if (ticket == null) {
+            JOptionPane.showMessageDialog(this, "Ticket no encontrado", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+
+        Duration tiempoPasado = Duration.between(ticket.getFecha_hora(), salida);
+        long minutos = tiempoPasado.toMinutes();
+        double total = minutos * precioPorMinuto;
+        if (minutos == 0) total = precioPorMinuto; // Mínimo 1 minuto de cobro
+
+        double dinero;
+        try {
+            dinero = Double.parseDouble(JOptionPane.showInputDialog(this, "Introduce la cantidad de dinero: "));
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Cantidad de dinero inválida", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+
+        // Mostrar la barra de carga
+        BarraCarga carga = new BarraCarga();
+        carga.setVisible(true);
+
+        // Simulación de proceso de pago
+        double finalTotal = total;
+        new Thread(() -> {
+            for (int i = 0; i <= 100; i++) {
+                try {
+                    Thread.sleep(50); // Simula un proceso de pago
+                    carga.actualizarProgreso(i); // Actualiza la barra de progreso
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            carga.dispose(); // Cierra la barra de progreso una vez completado el pago
+            maquina.pagarTicket(tiketNum, dinero);
+        }).start();
+    
+    }//GEN-LAST:event_BotonPagarActionPerformed
 
     /**
      * @param args the command line arguments

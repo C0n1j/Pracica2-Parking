@@ -43,7 +43,7 @@ public class BarraCarga extends javax.swing.JFrame {
     }
 
     // Método para actualizar la barra de progreso
-    private void actualizarProgreso(int valor) {
+    public void actualizarProgreso(int valor) {
         progressBar.setValue(valor);
     }
 

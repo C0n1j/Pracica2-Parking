@@ -18,13 +18,13 @@ public class Ticket {
     private int id;
     private String matricula;
     private LocalDateTime fecha_hora;
-    private Ubicacion ubicacion; // Se debe asegurar que esto se inicializa correctamente
+    private Ubicacion ubicacion;
 
     public Ticket(String matricula, LocalDateTime fecha_hora, Plano plano) {
         this.id = ++contador;
         this.matricula = matricula;
         this.fecha_hora = fecha_hora;
-        this.ubicacion = plano.estacionar(id); // Aquí aseguramos que se obtiene la ubicación
+        this.ubicacion = plano.estacionar(id);
 
         if (ubicacion == null) {
             System.out.println("Parking lleno, no se puede estacionar el vehículo.");
@@ -35,7 +35,7 @@ public class Ticket {
         return id;
     }
 
-    public String getMatricula(String matricula1) {
+    public String getMatricula() {
         return matricula;
     }
 
@@ -43,14 +43,17 @@ public class Ticket {
         return fecha_hora;
     }
 
-    public Ubicacion getUbicacion() { // Asegurar que este método existe
+    public Ubicacion getUbicacion() {
         return ubicacion;
+    }
+
+    public static int getContador() {
+        return contador;
     }
 
     @Override
     public String toString() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMM-yyyy HH:mm:ss");
-        return "Ticket{id=" + id + ", fechaHora=" + fecha_hora.format(formatter) +
-               ", matricula=" + matricula + ", sitio=" + ubicacion + '}';
+        return "Ticket{id=" + id + ", fechaHora=" + fecha_hora.format(formatter) + ", matricula=" + matricula + ", sitio=" + ubicacion + '}';
     }
 }

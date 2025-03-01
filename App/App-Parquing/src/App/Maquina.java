@@ -26,12 +26,11 @@ public class Maquina {
         this.tickets = new ArrayList<>();
     }
 
-    // Método para generar un ticket si hay espacio en el parking
     public Ticket generarTicket(String matricula) {
         Ticket ticket = new Ticket(matricula, java.time.LocalDateTime.now(), parking);
         if (ticket.getUbicacion() != null) {
             tickets.add(ticket);
-            System.out.println("✅ Ticket generado: " + ticket);
+            System.out.println("✔ Ticket generado: " + ticket);
         } else {
             System.out.println("🚫 No hay espacio disponible en el parking.");
             return null;
@@ -39,7 +38,6 @@ public class Maquina {
         return ticket;
     }
 
-    // Método para procesar el pago y liberar el vehículo
     public boolean pagarTicket(int ticketId, double cantidadIntroducida) {
         Ticket ticket = buscarTicket(ticketId);
         if (ticket == null) {
@@ -64,8 +62,7 @@ public class Maquina {
         return true;
     }
 
-    // Busca un ticket por ID
-    private Ticket buscarTicket(int ticketId) {
+    public Ticket buscarTicket(int ticketId) {
         for (Ticket t : tickets) {
             if (t.getId() == ticketId) {
                 return t;
@@ -80,4 +77,3 @@ public class Maquina {
         System.out.println(deposito);
     }
 }
-
