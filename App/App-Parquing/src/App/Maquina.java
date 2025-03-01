@@ -72,7 +72,7 @@ public class Maquina {
     }
 
     public void mostrarEstado() {
-        System.out.println("📊 Estado de la máquina:");
+        System.out.println(" Estado de la máquina:");
         parking.mostrarParking();
         System.out.println(deposito);
     }
