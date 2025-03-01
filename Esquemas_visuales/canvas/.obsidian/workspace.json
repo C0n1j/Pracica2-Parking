@@ -23,8 +23,43 @@
               "icon": "lucide-layout-dashboard",
               "title": "Plano"
             }
+          },
+          {
+            "id": "e335a295e0e7bd66",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Principal.canvas",
+                "viewState": {
+                  "x": -70.73043425141884,
+                  "y": 108.53180767478571,
+                  "zoom": -1
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Principal"
+            }
+          },
+          {
+            "id": "3882af2f917d6e4d",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Maquina.canvas",
+                "viewState": {
+                  "x": -174.50302598738463,
+                  "y": -243.73591063402384,
+                  "zoom": -2.333333333333333
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Maquina"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "364c6966ff28ac00",
@@ -195,9 +230,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "14679d0372d4e6ff",
+  "active": "3882af2f917d6e4d",
   "lastOpenFiles": [
+    "Maquina.canvas",
+    "Principal.canvas",
     "Plano.canvas",
+    "2025-03-01.md",
+    "Untitled.canvas",
     "Deposito.canvas",
     "Ticket.canvas",
     "Ubicacion.canvas",

@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"8a1e745bac0546b2","x":160,"y":-160,"width":555,"height":280,"color":"2","type":"text","text":"#### **Atributos**\n\n- `private double precioPorMinuto` → Tarifa por minuto de estacionamiento.\n- `private Plano plano` → Instancia de `Plano` para manejar las plazas.\n- `private Deposito deposito` → Instancia de `Deposito` para manejar el dinero.\n- `private ArrayList<Ticket> tickets` → Lista de tickets generados."},
+		{"id":"1a0b6b9a09008cdc","x":-1000,"y":-180,"width":718,"height":320,"color":"6","type":"text","text":"#### **Métodos**\n\n- `public Maquina(double precioPorMinuto)` → Inicializa la máquina con el precio por minuto.\n- `public Ticket generarTicket(String matricula)` → Crea un ticket y asigna una plaza.\n- `public boolean pagarTicket(int ticketId, double cantidadIntroducida)` → Procesa el pago y libera la plaza.\n- `public void mostrarEstado()` → Muestra el estado del parking y el dinero en la máquina."},
+		{"id":"286908330aaf5975","x":-355,"y":280,"width":560,"height":160,"color":"3","type":"text","text":"#### **Dependencias y asociaciones**\n\n- **Usa `Plano` para gestionar las plazas.**\n- **Usa `Deposito` para gestionar los pagos.**\n- **Almacena y borra `Ticket` cuando un vehículo es retirado**"},
+		{"id":"7b1aa42bb95435bf","x":-200,"y":-50,"width":250,"height":60,"color":"4","type":"text","text":"Maquina"}
+	],
+	"edges":[
+		{"id":"88f816ee31456792","fromNode":"7b1aa42bb95435bf","fromSide":"bottom","toNode":"286908330aaf5975","toSide":"top"},
+		{"id":"5c1deef49b3e5600","fromNode":"7b1aa42bb95435bf","fromSide":"right","toNode":"8a1e745bac0546b2","toSide":"left"},
+		{"id":"2547dc85ec9b9708","fromNode":"7b1aa42bb95435bf","fromSide":"left","toNode":"1a0b6b9a09008cdc","toSide":"right"}
+	]
+}
