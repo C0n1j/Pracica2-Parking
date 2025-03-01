@@ -8,6 +8,9 @@ package App;
  *@author jovcubni
  * @author Andrei
  */
+import App.Tiket_Plazas.Ticket;
+import App.Tiket_Plazas.Plano;
+import App.Deposito.Deposito;
 import java.util.ArrayList;
 
 public class Maquina {

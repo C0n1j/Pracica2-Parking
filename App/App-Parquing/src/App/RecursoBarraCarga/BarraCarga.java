@@ -1,8 +1,11 @@
-package App;
+package App.RecursoBarraCarga;
 
 import javax.swing.JProgressBar;
 import javax.swing.GroupLayout;
-
+/**
+ * Codigo proporcionado por ChatGpt
+ * 
+ */
 public class BarraCarga extends javax.swing.JFrame {
 
     private JProgressBar progressBar; // Declaración de la barra de progreso

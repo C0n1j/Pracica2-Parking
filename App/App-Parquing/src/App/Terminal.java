@@ -4,12 +4,18 @@
  */
 package App;
 
+import App.Tiket_Plazas.Ticket;
+import java.time.LocalDateTime;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author jovcubni
  */
 public class Terminal extends javax.swing.JFrame {
 
+    
+    public Maquina maquina = new Maquina(0.50);
     /**
      * Creates new form Terminal
      */
@@ -121,6 +127,11 @@ public class Terminal extends javax.swing.JFrame {
         jLabel1.setText("INSERTE LA MATRICULA");
 
         Tiket1.setText("✔ Ok");
+        Tiket1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Tiket1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -159,6 +170,17 @@ public class Terminal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void Tiket1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Tiket1ActionPerformed
+        // TODO add your handling code here:
+        String matricula= Matricula.getText();
+        if (matricula.isEmpty()){
+            JOptionPane.showMessageDialog(this, "No puede ser nula","Nota",2);
+        }else {
+            maquina.generarTicket(matricula);
+            JOptionPane.showMessageDialog(this,maquina.generarTicket(matricula), "Tiket", HEIGHT);
+        }
+    }//GEN-LAST:event_Tiket1ActionPerformed
 
     /**
      * @param args the command line arguments

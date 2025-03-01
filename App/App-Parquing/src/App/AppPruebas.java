@@ -4,6 +4,8 @@
  */
 package App;
 
+import App.Tiket_Plazas.Ticket;
+import App.Tiket_Plazas.Plano;
 import java.time.LocalDateTime;
 
 /**

@@ -1,4 +1,4 @@
-package App;
+package App.Deposito;
 
 import java.util.*;
 
@@ -8,8 +8,8 @@ import java.util.*;
  */
 public class Deposito {
     
-    double precio=4.5;
-    double pago=10.0;
+    double precio;//Lo que le cuesta
+    double pago;//Lo que introduce el usuario
     
      /**
      * The main method.
@@ -66,28 +66,29 @@ public class Deposito {
      * @return true, if successful
      */
     public boolean proporcionarCambio(double cambio) {
-        if (cambio == 0) return true;
+    if (cambio == 0) return true;
 
-        double[] valores = {20.0, 10.0, 5.0, 2.0, 1.0, 0.50, 0.20, 0.10, 0.05};
-        Map<Double, Integer> cambioEntregado = new HashMap<>();
+    double[] valores = {20.0, 10.0, 5.0, 2.0, 1.0, 0.50, 0.20, 0.10, 0.05};
+    ArrayList<Double> cambioEntregado = new ArrayList<>();
 
-        for (double valor : valores) {
-            while (cambio >= valor && deposito.getCantidad(valor) > 0) {
-                cambio -= valor;
-                cambio = Math.round(cambio * 100.0) / 100.0; // Evitar errores de coma flotante
-                deposito.retirarMoneda(valor, 1);
-                cambioEntregado.put(valor, cambioEntregado.getOrDefault(valor, 0) + 1);
-            }
+    for (double valor : valores) {
+        while (cambio >= valor && deposito.getCantidad(valor) > 0) {
+            cambio -= valor;
+            cambio = Math.round(cambio * 100.0) / 100.0; 
+            deposito.retirarMoneda(valor, 1);
+            cambioEntregado.add(valor);
         }
-
-        if (cambio > 0) {
-            System.out.println("No se pudo dar el cambio exacto.");
-            return false;
-        }
-
-        System.out.println("Cambio entregado: " + cambioEntregado);
-        return true;
     }
+
+    if (cambio > 0) {
+        System.out.println("No se pudo dar el cambio exacto.");
+        return false;
+    }
+
+    System.out.println("Cambio entregado: " + cambioEntregado);
+    return true;
+}
+
 
 
 }

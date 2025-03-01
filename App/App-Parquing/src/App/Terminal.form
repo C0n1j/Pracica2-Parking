@@ -207,6 +207,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x2714; Ok"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Tiket1ActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
