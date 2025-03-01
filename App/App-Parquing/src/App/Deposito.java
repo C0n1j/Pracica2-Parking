@@ -15,6 +15,9 @@ public class Deposito {
      * The main method.
      *
      * @param args the arguments
+     **
+     *@author jovcubni
+     * @author Andrei
      */
     public static void main(String[] args) {
         Deposito dep = new Deposito();
