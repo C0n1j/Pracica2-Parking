@@ -4,6 +4,7 @@
  */
 package App;
 
+import App.Deposito.Deposito;
 import App.RecursoBarraCarga.BarraCarga;
 import App.Tiket_Plazas.Ticket;
 import java.time.Duration;
@@ -40,11 +41,12 @@ public class Terminal extends javax.swing.JFrame {
         PagoYmas = new javax.swing.JPanel();
         BotonPagar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        Muestraprecio = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         DineroPone = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        Cambio = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        Muestraprecio = new javax.swing.JLabel();
+        Cambio = new javax.swing.JLabel();
         OcupacionParking = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         Matricula = new javax.swing.JTextField();
@@ -63,13 +65,18 @@ public class Terminal extends javax.swing.JFrame {
 
         jLabel2.setText("A pagar --->");
 
-        Muestraprecio.setEditable(false);
-
         jLabel3.setText("Inserta -->");
 
         jButton1.setText("✔ ok");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
-        Cambio.setEditable(false);
+        Muestraprecio.setText("$");
+
+        Cambio.setText("Cambio: ");
 
         javax.swing.GroupLayout PagoYmasLayout = new javax.swing.GroupLayout(PagoYmas);
         PagoYmas.setLayout(PagoYmasLayout);
@@ -83,22 +90,23 @@ public class Terminal extends javax.swing.JFrame {
                 .addGroup(PagoYmasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PagoYmasLayout.createSequentialGroup()
                         .addGap(23, 23, 23)
+                        .addGroup(PagoYmasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel2))
+                        .addGap(30, 30, 30)
                         .addGroup(PagoYmasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(PagoYmasLayout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(DineroPone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(PagoYmasLayout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(30, 30, 30)
-                                .addComponent(Muestraprecio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(DineroPone)
+                            .addComponent(Muestraprecio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE))
                     .addGroup(PagoYmasLayout.createSequentialGroup()
                         .addGap(82, 82, 82)
-                        .addComponent(jButton1))
-                    .addGroup(PagoYmasLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Cambio, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jButton1)))
                 .addContainerGap(18, Short.MAX_VALUE))
+            .addGroup(PagoYmasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Cambio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         PagoYmasLayout.setVerticalGroup(
             PagoYmasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -108,16 +116,17 @@ public class Terminal extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(PagoYmasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(Muestraprecio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel4)
+                    .addComponent(Muestraprecio))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(PagoYmasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
                     .addComponent(DineroPone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton1)
-                .addGap(29, 29, 29)
-                .addComponent(Cambio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(39, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addComponent(Cambio)
+                .addGap(40, 40, 40))
         );
 
         OcupacionParking.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -171,7 +180,7 @@ public class Terminal extends javax.swing.JFrame {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Matricula, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(Tiket1)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(OcupacionParking, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(PagoYmas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -195,16 +204,20 @@ public class Terminal extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_Tiket1ActionPerformed
 
+    private double total;
+    private int tiketNum;
+    
     private void BotonPagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPagarActionPerformed
         LocalDateTime salida = LocalDateTime.now();
-        double precioPorMinuto=0.50;
+        double precioPorMinuto = 0.50;
         String tiketId = JOptionPane.showInputDialog(this, "Introduce el ID del ticket: ");
-         if (tiketId == null || tiketId.isEmpty()) {
+        
+        if (tiketId == null || tiketId.isEmpty()) {
             JOptionPane.showMessageDialog(this, "No puede ser nula", "Nota", JOptionPane.WARNING_MESSAGE);
             return;
         }
         
-        int tiketNum;
+        
         try {
             tiketNum = Integer.parseInt(tiketId);
         } catch (NumberFormatException e) {
@@ -225,12 +238,20 @@ public class Terminal extends javax.swing.JFrame {
 
         Duration tiempoPasado = Duration.between(ticket.getFecha_hora(), salida);
         long minutos = tiempoPasado.toMinutes();
-        double total = minutos * precioPorMinuto;
+        total = minutos * precioPorMinuto;
         if (minutos == 0) total = precioPorMinuto; // Mínimo 1 minuto de cobro
+        Muestraprecio.setText(total + "€");
 
-        double dinero;
+  
+    }//GEN-LAST:event_BotonPagarActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+         // TODO add your handling code here:
+        String dinero;
+        int dineros;
         try {
-            dinero = Double.parseDouble(JOptionPane.showInputDialog(this, "Introduce la cantidad de dinero: "));
+            dinero = DineroPone.getText();
+            dineros = Integer.parseInt(dinero);
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(this, "Cantidad de dinero inválida", "Error", JOptionPane.ERROR_MESSAGE);
             return;
@@ -240,8 +261,7 @@ public class Terminal extends javax.swing.JFrame {
         BarraCarga carga = new BarraCarga();
         carga.setVisible(true);
 
-        // Simulación de proceso de pago
-        double finalTotal = total;
+        // Simulación de proceso de pago (codigo carga barra por ChatGpt)
         new Thread(() -> {
             for (int i = 0; i <= 100; i++) {
                 try {
@@ -252,10 +272,13 @@ public class Terminal extends javax.swing.JFrame {
                 }
             }
             carga.dispose(); // Cierra la barra de progreso una vez completado el pago
-            maquina.pagarTicket(tiketNum, dinero);
+            
+            // Procesar el pago y liberar el ticket
+            maquina.pagarTicket(tiketNum, dineros);
+            double cambio = dineros - total;
+            Cambio.setText("Cambio: " + cambio + "€. Hasta pronto");
         }).start();
-    
-    }//GEN-LAST:event_BotonPagarActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -294,10 +317,10 @@ public class Terminal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BotonPagar;
-    private javax.swing.JTextField Cambio;
+    private javax.swing.JLabel Cambio;
     private javax.swing.JTextField DineroPone;
     private javax.swing.JTextField Matricula;
-    private javax.swing.JTextField Muestraprecio;
+    private javax.swing.JLabel Muestraprecio;
     private javax.swing.JPanel OcupacionParking;
     private javax.swing.JPanel PagoYmas;
     private javax.swing.JButton Tiket1;
@@ -305,5 +328,6 @@ public class Terminal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }
