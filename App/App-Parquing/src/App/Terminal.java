@@ -48,6 +48,7 @@ public class Terminal extends javax.swing.JFrame {
         Muestraprecio = new javax.swing.JLabel();
         Cambio = new javax.swing.JLabel();
         OcupacionParking = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         Matricula = new javax.swing.JTextField();
         Tiket1 = new javax.swing.JButton();
@@ -74,7 +75,7 @@ public class Terminal extends javax.swing.JFrame {
             }
         });
 
-        Muestraprecio.setText("$");
+        Muestraprecio.setText("€");
 
         Cambio.setText("Cambio: ");
 
@@ -131,15 +132,23 @@ public class Terminal extends javax.swing.JFrame {
 
         OcupacionParking.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        jLabel5.setText("Aqui se inserta el mapa");
+
         javax.swing.GroupLayout OcupacionParkingLayout = new javax.swing.GroupLayout(OcupacionParking);
         OcupacionParking.setLayout(OcupacionParkingLayout);
         OcupacionParkingLayout.setHorizontalGroup(
             OcupacionParkingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 250, Short.MAX_VALUE)
+            .addGroup(OcupacionParkingLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 268, Short.MAX_VALUE)
+                .addContainerGap())
         );
         OcupacionParkingLayout.setVerticalGroup(
             OcupacionParkingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(OcupacionParkingLayout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jLabel1.setFont(new java.awt.Font("Rockwell", 0, 24)); // NOI18N
@@ -161,15 +170,16 @@ public class Terminal extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(PagoYmas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(OcupacionParking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(11, 11, 11)
+                        .addGap(50, 50, 50)
                         .addComponent(Matricula, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(31, 31, 31)
-                        .addComponent(Tiket1)))
-                .addContainerGap(36, Short.MAX_VALUE))
+                        .addComponent(Tiket1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(39, 39, 39)
+                        .addComponent(OcupacionParking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -329,5 +339,6 @@ public class Terminal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     // End of variables declaration//GEN-END:variables
 }
