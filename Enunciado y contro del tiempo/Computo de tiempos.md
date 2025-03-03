@@ -16,3 +16,4 @@
 |Modificacion Principal + revision Tiket|Andrei|03/03/2025/8:30|03/03/2025/9:05|35min|
 |Modificacion esquema Principal|Andrei|03/03/2025/9:06|03/03/2025/9:22|12min|
 |Revision codigo|Andrei|03/03/2025/9:24|03/03/2025/9:40|16min|
+|Manejo de excepciones + ajustes ventanas (principal y barra)|Nioclás|03/03/2025/20:45|03/03/2025/21:15|30m|
