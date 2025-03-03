@@ -263,15 +263,21 @@ public class Terminal extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
          // TODO add your handling code here:
         String dinero;
-        int dineros;
+
         try {
             dinero = DineroPone.getText();
-            dineros = Integer.parseInt(dinero);
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(this, "Cantidad de dinero inválida", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
-
+        
+        int dineros = Integer.parseInt(dinero);
+        if (dineros<total){
+            JOptionPane.showMessageDialog(this, "Cantidad de dinero inválida", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+            
+        
         // Mostrar la barra de carga
         BarraCarga carga = new BarraCarga();
         carga.setVisible(true);

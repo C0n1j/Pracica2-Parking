@@ -2,6 +2,7 @@ package App.RecursoBarraCarga;
 
 import javax.swing.JProgressBar;
 import javax.swing.GroupLayout;
+
 /**
  * Codigo proporcionado por ChatGpt
  * 
@@ -12,6 +13,8 @@ public class BarraCarga extends javax.swing.JFrame {
 
     public BarraCarga() {
         initComponents();
+        setLocationRelativeTo(null); // Centra la ventana en la pantalla
+        setResizable(false); // Evita que la ventana sea redimensionable
     }
 
     private void initComponents() {
@@ -34,12 +37,13 @@ public class BarraCarga extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(120, 120, 120)
+                .addGap(20, 20, 20)
                 .addComponent(progressBar, GroupLayout.PREFERRED_SIZE, 30, GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(150, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         pack();
+        setSize(400, 100); // Ajusta el tamaño de la ventana
     }
 
     // Método para actualizar la barra de progreso
