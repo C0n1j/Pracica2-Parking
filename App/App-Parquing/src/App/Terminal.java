@@ -207,9 +207,9 @@ public class Terminal extends javax.swing.JFrame {
         } else {
             Ticket ticket = maquina.generarTicket(matricula);
             if (ticket != null) {
-                JOptionPane.showMessageDialog(this, "✅ Ticket generado: " + ticket, "Ticket", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(this, " Ticket generado: " + ticket, "Ticket", JOptionPane.INFORMATION_MESSAGE);
             } else {
-                JOptionPane.showMessageDialog(this, "🚫 No hay espacio disponible en el parking.", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, " No hay espacio disponible en el parking.", "Error", JOptionPane.ERROR_MESSAGE);
             }
         }
     }//GEN-LAST:event_Tiket1ActionPerformed
