@@ -32,9 +32,9 @@
               "state": {
                 "file": "Principal.canvas",
                 "viewState": {
-                  "x": -70.73043425141884,
-                  "y": 108.53180767478571,
-                  "zoom": -1
+                  "x": 13.143776269956163,
+                  "y": 347.7006532587254,
+                  "zoom": -1.2092725578951293
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -59,7 +59,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "364c6966ff28ac00",
@@ -230,14 +230,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3882af2f917d6e4d",
+  "active": "e335a295e0e7bd66",
   "lastOpenFiles": [
-    "Maquina.canvas",
+    "Deposito.canvas",
     "Principal.canvas",
+    "Maquina.canvas",
     "Plano.canvas",
     "2025-03-01.md",
     "Untitled.canvas",
-    "Deposito.canvas",
     "Ticket.canvas",
     "Ubicacion.canvas",
     "Tipo Monedas.canvas",
