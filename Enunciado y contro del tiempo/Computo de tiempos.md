@@ -10,7 +10,7 @@
 |Maquina|Andrei|01/03/2025/12:05|01/03/2025/13:30|1h25|
 |Principal|Andrei|01/03/2025/14:50|01/03/2025/15:20|30min|
 |Esquemas Maquina y Principal|Andrei|01/03/2025/15:30|01/03/2025/16:15|45min|
-|Rebision codigo + recolocacion archivos|Nicolás|01/03/2025/19:00|01/030/25/19:12|
+|Rebision codigo + recolocacion archivos|Nicolás|01/03/2025/19:00|01/030/25/19:12|12m|
 |Integracion aparcar + inicio metodo pago|Nicolás|01/03/2025/19:00|01/03/2025/20:42|1h42m|
 |Finalizar integracioón pago|Nicolás|02/03/2025/19:24|02/03/2025/20:10|46m|
 |Modificacion Principal + revision Tiket|Andrei|03/03/2025/8:30|03/03/2025/9:05|35min|
