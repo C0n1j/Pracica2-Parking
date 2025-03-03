@@ -1,6 +1,6 @@
 # 🚗 Práctica de Programación → Parking  
 ![GitHub last commit](https://img.shields.io/github/last-commit/nicgrefer/Pracica2-Parking) ![GitHub contributors](https://img.shields.io/github/contributors/nicgrefer/Pracica2-Parking) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/nicgrefer/Pracica2-Parking) 
-<br>![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=flat&logo=openjdk&logoColor=white)  ![v](https://img.shields.io/badge/version-v1.5.1-red)
+<br>![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=flat&logo=openjdk&logoColor=white)  ![v](https://img.shields.io/badge/version-v1.5.2-red)
 
 
 ## 📌 Introducción  
@@ -29,3 +29,7 @@ El repositorio está compuesto por varias carpetas:
 📌 Contiene `canvas`(atizando `Obsidian` para su creación) o imágenes relacionadas con el planteamiento de cada `clase` o `función`.  
 
 ---
+
+# Como ejecutar la aplicación 
+
+Dentro de la carpeta hay una clase java que se llama `principal` que hay que ejecutar para que se cargue la app
