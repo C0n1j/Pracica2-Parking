@@ -27,8 +27,13 @@ public class Terminal extends javax.swing.JFrame {
      */
     public Terminal() {
         initComponents();
+        setFrame();
     }
-
+    public void setFrame(){
+        this.setLocationRelativeTo(null);
+        this.setResizable(false);
+        this.setTitle("Terminal");
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
