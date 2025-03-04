@@ -26,6 +26,7 @@ public class Ubicacion {
      * @param planta the planta
      * @param plaza the plaza
      */
+    //constructor
     public Ubicacion(int planta, int plaza) {
         this.planta = planta;
         this.plaza = plaza;
