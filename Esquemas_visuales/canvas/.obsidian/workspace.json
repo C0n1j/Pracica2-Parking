@@ -6,6 +6,7 @@
       {
         "id": "d42b0f4ef82daaaa",
         "type": "tabs",
+        "dimension": 62.881097560975604,
         "children": [
           {
             "id": "14679d0372d4e6ff",
@@ -47,23 +48,24 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Maquina.canvas",
+                "file": "Terminal.canvas",
                 "viewState": {
-                  "x": -171.8518250487657,
-                  "y": -24.322520953922634,
-                  "zoom": -1.4736965632438743
+                  "x": -237.66530704758463,
+                  "y": 304.68128836214515,
+                  "zoom": -1.3715336326758067
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Maquina"
+              "title": "Terminal"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "364c6966ff28ac00",
         "type": "tabs",
+        "dimension": 37.118902439024396,
         "children": [
           {
             "id": "4a878f08087013db",
@@ -230,12 +232,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e335a295e0e7bd66",
+  "active": "3882af2f917d6e4d",
   "lastOpenFiles": [
     "Deposito.canvas",
-    "Principal.canvas",
+    "Terminal.canvas",
     "Maquina.canvas",
+    "Terminal.md",
+    "Untitled 1.canvas",
     "Plano.canvas",
+    "Principal.canvas",
     "2025-03-01.md",
     "Untitled.canvas",
     "Ticket.canvas",
