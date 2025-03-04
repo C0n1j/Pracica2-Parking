@@ -1,79 +1,37 @@
 {
   "main": {
-    "id": "318519a7d0e2dc46",
+    "id": "14b4f4fe0ba94c1a",
     "type": "split",
     "children": [
       {
-        "id": "d42b0f4ef82daaaa",
+        "id": "78e2c23f1cbdd657",
         "type": "tabs",
         "children": [
           {
-            "id": "14679d0372d4e6ff",
+            "id": "c0d7923458cf8a0a",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Plano.canvas",
-                "viewState": {
-                  "x": -2.9604468423586816,
-                  "y": 456.0646138061361,
-                  "zoom": -1.6991589446862534
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Plano"
-            }
-          },
-          {
-            "id": "e335a295e0e7bd66",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Principal.canvas",
-                "viewState": {
-                  "x": 13.143776269956163,
-                  "y": 347.7006532587254,
-                  "zoom": -1.2092725578951293
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Principal"
-            }
-          },
-          {
-            "id": "3882af2f917d6e4d",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Ubicacion.canvas",
-                "viewState": {
-                  "x": -390,
-                  "y": 270,
-                  "zoom": -0.20223622509331865
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Ubicacion"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nueva pestaña"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "7d3f3ef197d4bec1",
+    "id": "8bf7a10d55f8db50",
     "type": "split",
     "children": [
       {
-        "id": "c5fd6fa5e47011ac",
+        "id": "51ed00f3599dc464",
         "type": "tabs",
         "children": [
           {
-            "id": "c82748086aad3954",
+            "id": "45bf9e7443ca606e",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -86,7 +44,7 @@
             }
           },
           {
-            "id": "5cb8dd7810e15e74",
+            "id": "23821cf34ff6dd43",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -103,7 +61,7 @@
             }
           },
           {
-            "id": "2aca8437ba550a03",
+            "id": "a2aee5634032d76f",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -116,23 +74,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "44644666d27374db",
+    "id": "62b8704487ffdfc8",
     "type": "split",
     "children": [
       {
-        "id": "9dc69e4e99f2acc1",
+        "id": "1e5eae3d7683a18c",
         "type": "tabs",
         "children": [
           {
-            "id": "def0767afd37ffbc",
+            "id": "b8870ac72e1e841c",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sin título.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,25 +99,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Sin título"
+              "title": "Enlaces entrantes"
             }
           },
           {
-            "id": "1951e847268c8277",
+            "id": "0e17668fd650a185",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sin título.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Sin título"
+              "title": "Enlaces salientes"
             }
           },
           {
-            "id": "2a794a3cef13c6a1",
+            "id": "656726e2444784f5",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -175,18 +131,17 @@
             }
           },
           {
-            "id": "263ab9a55797f5e2",
+            "id": "e47007d4351d7b68",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sin título.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Sin título"
+              "title": "Esquema"
             }
           }
         ]
@@ -206,22 +161,6 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "3882af2f917d6e4d",
-  "lastOpenFiles": [
-    "Tipo Monedas.canvas",
-    "Ticket.canvas",
-    "Terminal.canvas",
-    "Principal.canvas",
-    "Plano.canvas",
-    "Maquina.canvas",
-    "Deposito.canvas",
-    "Ubicacion.canvas",
-    "Untitled.canvas",
-    "Untitled 1.canvas",
-    "2025-03-01.md",
-    "Terminal.md",
-    "Sin título.md",
-    "Captura.png",
-    "Bienvenido.md"
-  ]
+  "active": "c0d7923458cf8a0a",
+  "lastOpenFiles": []
 }
