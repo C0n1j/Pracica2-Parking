@@ -15,7 +15,7 @@ package App.Tiket_Plazas;
 public class Plano {
 
 
-    /** The plazas. */
+   /** The plazas. */
     private int[][] plazas; 
 
     /**
@@ -29,19 +29,19 @@ public class Plano {
      * Estacionar.
      *
      * @param ticketId the ticket id
-     * @return true, if successful
+     * @return Ubicacion, if successful
      */
-    // Busca la primera plaza libre y estaciona el coche, devolviendo true si tuvo Ã©xito
-    public boolean estacionar(int ticketId) {
+    // Busca la primera plaza libre y devuelve la ubicación
+    public Ubicacion estacionar(int ticketId) {
         for (int planta = 0; planta < plazas.length; planta++) {
             for (int plaza = 0; plaza < plazas[planta].length; plaza++) {
                 if (plazas[planta][plaza] == 0) { // si la plaza esta libre
                     plazas[planta][plaza] = ticketId; // se ocupa esa plaza con el id del ticket
-                    return true;
+                    return new Ubicacion(planta, plaza);
                 }
             }
         }
-        return false; // Parking lleno
+        return null; // Parking lleno
     }
 
     /**
