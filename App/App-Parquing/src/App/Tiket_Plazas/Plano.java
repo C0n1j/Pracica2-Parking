@@ -29,19 +29,19 @@ public class Plano {
      * Estacionar.
      *
      * @param ticketId the ticket id
-     * @return the ubicacion
+     * @return true, if successful
      */
-    // Busca la primera plaza libre y devuelve una plaza libre
-    public Ubicacion estacionar(int ticketId) {
+    // Busca la primera plaza libre y estaciona el coche, devolviendo true si tuvo Ã©xito
+    public boolean estacionar(int ticketId) {
         for (int planta = 0; planta < plazas.length; planta++) {
             for (int plaza = 0; plaza < plazas[planta].length; plaza++) {
                 if (plazas[planta][plaza] == 0) { // si la plaza esta libre
                     plazas[planta][plaza] = ticketId; // se ocupa esa plaza con el id del ticket
-                    return new Ubicacion(planta, plaza);
+                    return true;
                 }
             }
         }
-        return null; // Parking lleno
+        return false; // Parking lleno
     }
 
     /**
@@ -67,10 +67,8 @@ public class Plano {
      * Mostrar parking.
      */
     public void mostrarParking() {
-        System.out.println("Plano del Parking:");
         for (int[] planta : plazas) {
             System.out.println(Arrays.toString(planta));
         }
     }
-  
 }
