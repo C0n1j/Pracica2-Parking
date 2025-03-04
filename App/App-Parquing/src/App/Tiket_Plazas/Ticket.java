@@ -19,7 +19,8 @@ public class Ticket {
     private String matricula;
     private LocalDateTime fecha_hora;
     private Ubicacion ubicacion;
-
+    
+    //constructor
     public Ticket(String matricula, LocalDateTime fecha_hora, Plano plano) {
         this.id = ++contador;
         this.matricula = matricula;

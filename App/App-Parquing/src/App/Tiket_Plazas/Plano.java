@@ -16,13 +16,13 @@ public class Plano {
 
 
     /** The plazas. */
-    private int[][] plazas; //3 plantas
+    private int[][] plazas; 
 
     /**
      * Instantiates a new plano.
      */
     public Plano() {
-        plazas = new int[3][20]; //plazas vacias
+        plazas = new int[3][20]; //3 plantas(son las filas), 20 plazas(son las columnas)
     }
 
     /**
@@ -31,12 +31,12 @@ public class Plano {
      * @param ticketId the ticket id
      * @return the ubicacion
      */
-    // Busca la primera plaza libre y devuelve una Ubicacion
+    // Busca la primera plaza libre y devuelve una plaza libre
     public Ubicacion estacionar(int ticketId) {
         for (int planta = 0; planta < plazas.length; planta++) {
             for (int plaza = 0; plaza < plazas[planta].length; plaza++) {
-                if (plazas[planta][plaza] == 0) { // Si la plaza está libre
-                    plazas[planta][plaza] = ticketId; // Ocupa la plaza con el ID del ticket
+                if (plazas[planta][plaza] == 0) { // si la plaza esta libre
+                    plazas[planta][plaza] = ticketId; // se ocupa esa plaza con el id del ticket
                     return new Ubicacion(planta, plaza);
                 }
             }
@@ -54,8 +54,8 @@ public class Plano {
     public boolean liberar(int ticketId) {
         for (int planta = 0; planta < plazas.length; planta++) {
             for (int plaza = 0; plaza < plazas[planta].length; plaza++) {
-                if (plazas[planta][plaza] == ticketId) { // Si encontramos el ticket ID en la plaza
-                    plazas[planta][plaza] = 0; // Liberamos la plaza
+                if (plazas[planta][plaza] == ticketId) { // si encontramos el tiket...
+                    plazas[planta][plaza] = 0; // esa plaza encontrada vuelve a 0, la liberamos para el siguiente
                     return true;
                 }
             }
