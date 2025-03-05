@@ -14,7 +14,7 @@ import java.time.format.DateTimeFormatter;
  * @author Andrei
  */
 public class Ticket {
-    private static int contador = 0;
+    private static int contador = 0; //contador de tipo estatico para crear id unicos
     private int id;
     private String matricula;
     private LocalDateTime fecha_hora;
@@ -22,12 +22,12 @@ public class Ticket {
     
     //constructor
     public Ticket(String matricula, LocalDateTime fecha_hora, Plano plano) {
-        this.id = ++contador;
+        this.id = ++contador; //cada vez que se genere un ticket, se incrementa
         this.matricula = matricula;
         this.fecha_hora = fecha_hora;
-        this.ubicacion = plano.estacionar(id);
+        this.ubicacion = plano.estacionar(id);//se asigna la plaza si se puede
 
-        if (ubicacion == null) {
+        if (ubicacion == null) { 
             System.out.println("Parking lleno, no se puede estacionar el vehículo.");
         }
     }
