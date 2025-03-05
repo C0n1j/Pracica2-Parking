@@ -1,8 +1,8 @@
 # Clases necesarias
 
-- [ ] Principal
-- [ ] Maquina
-- [ ] Terminal
+- [x] Principal
+- [x] Maquina
+- [x] Terminal
 - [x] Tiket
 - [x] Ubiacion planta (mapa de parquing)
 - [x] Deposito
@@ -36,3 +36,27 @@ Presenta informacccion al salir del parquing como :
 ````
 información: un identificador único, matrícula del coche, fecha/hora de entrada y UBICACIÓN (planta/plaza) asignada
 ````
+
+# Representacion visual de cada clase
+
+## Deposito
+![Ejemplo Deposito](anexos/Deposito.png)
+## Maquina
+![Ejemplo Maquina](anexos/Maquina.png)
+## Plano
+![Ejemplo Plano](anexos/Plano.png)
+## Principal
+![Ejemplo Principal](anexos/Principal.png)
+## Terminal
+![Ejemplo Terminal](anexos/Terminal.png)
+## Tiket
+![Ejemplo Ticket](anexos/Ticket.png)
+## Tipo Monedas
+![Ejemplo Tipo monedas](anexos/Tipo%20Monedas.png)
+## Ubicación
+![Ejemplo Ubicacion](anexos/Ubicacion.png)
+
+
+
+
+
