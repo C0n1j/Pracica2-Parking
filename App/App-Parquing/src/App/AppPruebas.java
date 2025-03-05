@@ -9,7 +9,7 @@ import App.Tiket_Plazas.Plano;
 import java.time.LocalDateTime;
 
 /**
- *
+ * ESTA CLASE SOLO PARA PRUEBAS
  * @author Andrei
  */
 public class AppPruebas {

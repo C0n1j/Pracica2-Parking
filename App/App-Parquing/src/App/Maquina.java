@@ -30,9 +30,9 @@ public class Maquina {
         Ticket ticket = new Ticket(matricula, java.time.LocalDateTime.now(), parking);
         if (ticket.getUbicacion() != null) {
             tickets.add(ticket);
-            System.out.println("✔ Ticket generado: " + ticket);
+            System.out.println(" Ticket generado: " + ticket);
         } else {
-            System.out.println("🚫 No hay espacio disponible en el parking.");
+            System.out.println(" No hay espacio disponible en el parking.");
             return null;
         }
         return ticket;
@@ -41,7 +41,7 @@ public class Maquina {
     public boolean pagarTicket(int ticketId, double cantidadIntroducida) {
         Ticket ticket = buscarTicket(ticketId);
         if (ticket == null) {
-            System.out.println("❌ Ticket no encontrado.");
+            System.out.println(" Ticket no encontrado.");
             return false;
         }
 
