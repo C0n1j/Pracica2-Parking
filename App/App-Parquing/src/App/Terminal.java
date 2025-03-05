@@ -6,7 +6,9 @@ package App;
 
 import App.Deposito.Deposito;
 import App.RecursoBarraCarga.BarraCarga;
+import App.Tiket_Plazas.Plano;
 import App.Tiket_Plazas.Ticket;
+import App.Tiket_Plazas.Ubicacion;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.Date;
@@ -18,7 +20,7 @@ import javax.swing.JOptionPane;
  */
 public class Terminal extends javax.swing.JFrame {
 
-    
+    public Plano plano = new Plano();
     public Maquina maquina = new Maquina(0.50);
     public Ticket tiket;
 
@@ -137,8 +139,6 @@ public class Terminal extends javax.swing.JFrame {
 
         OcupacionParking.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel5.setText("Aqui se inserta el mapa");
-
         javax.swing.GroupLayout OcupacionParkingLayout = new javax.swing.GroupLayout(OcupacionParking);
         OcupacionParking.setLayout(OcupacionParkingLayout);
         OcupacionParkingLayout.setHorizontalGroup(
@@ -206,13 +206,20 @@ public class Terminal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Tiket1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Tiket1ActionPerformed
-        String matricula= Matricula.getText();
-        if (matricula.isEmpty()){
+         String matricula = Matricula.getText();
+        if (matricula.isEmpty()) {
             JOptionPane.showMessageDialog(this, "No puede ser nula", "Nota", JOptionPane.WARNING_MESSAGE);
         } else {
             Ticket ticket = maquina.generarTicket(matricula);
             if (ticket != null) {
                 JOptionPane.showMessageDialog(this, " Ticket generado: " + ticket, "Ticket", JOptionPane.INFORMATION_MESSAGE);
+                Ubicacion ubicacion = plano.estacionar(ticket.getId());
+                if (ubicacion != null) { // Estacionar el coche en el plano exitosamente
+                    System.out.println("Ocupación del parking después de estacionar:");
+                    plano.mostrarParking(); // Mostrar la ocupación del parking en la terminal
+                } else {
+                    JOptionPane.showMessageDialog(this, " No hay espacio disponible en el parking.", "Error", JOptionPane.ERROR_MESSAGE);
+                }
             } else {
                 JOptionPane.showMessageDialog(this, " No hay espacio disponible en el parking.", "Error", JOptionPane.ERROR_MESSAGE);
             }
@@ -270,14 +277,14 @@ public class Terminal extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Cantidad de dinero inválida", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
-        
-        int dineros = Integer.parseInt(dinero);
-        if (dineros<total){
+
+        double dineros = Double.parseDouble(dinero);
+        double total = Double.parseDouble(Muestraprecio.getText().replace("€", ""));
+        if (dineros < total) {
             JOptionPane.showMessageDialog(this, "Cantidad de dinero inválida", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
-            
-        
+
         // Mostrar la barra de carga
         BarraCarga carga = new BarraCarga();
         carga.setVisible(true);
@@ -293,11 +300,16 @@ public class Terminal extends javax.swing.JFrame {
                 }
             }
             carga.dispose(); // Cierra la barra de progreso una vez completado el pago
-            
+
             // Procesar el pago y liberar el ticket
-            maquina.pagarTicket(tiketNum, dineros);
+            maquina.pagarTicket((int) total, (int) dineros);
             double cambio = dineros - total;
             Cambio.setText("Cambio: " + cambio + "€. Hasta pronto");
+            if (plano.liberar((int) total)) { // Liberar la plaza en el plano
+                System.out.println("Ocupación del parking después de liberar:");
+                plano.liberar(tiketNum);
+                plano.mostrarParking(); // Mostrar la ocupación del parking en la terminal
+            }
         }).start();
     }//GEN-LAST:event_jButton1ActionPerformed
 

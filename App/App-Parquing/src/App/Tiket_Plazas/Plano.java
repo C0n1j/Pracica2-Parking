@@ -15,7 +15,11 @@ package App.Tiket_Plazas;
 public class Plano {
 
 
+<<<<<<< HEAD
     /** The plazas. */
+=======
+   /** The plazas. */
+>>>>>>> origin/main
     private int[][] plazas; 
 
     /**
@@ -29,9 +33,13 @@ public class Plano {
      * Estacionar.
      *
      * @param ticketId the ticket id
-     * @return the ubicacion
+     * @return Ubicacion, if successful
      */
+<<<<<<< HEAD
     // Busca la primera plaza libre y devuelve una plaza libre
+=======
+    // Busca la primera plaza libre y devuelve la ubicación
+>>>>>>> origin/main
     public Ubicacion estacionar(int ticketId) {
         for (int planta = 0; planta < plazas.length; planta++) {
             for (int plaza = 0; plaza < plazas[planta].length; plaza++) {
@@ -67,10 +75,8 @@ public class Plano {
      * Mostrar parking.
      */
     public void mostrarParking() {
-        System.out.println("Plano del Parking:");
         for (int[] planta : plazas) {
             System.out.println(Arrays.toString(planta));
         }
     }
-  
 }

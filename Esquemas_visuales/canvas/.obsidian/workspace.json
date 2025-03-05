@@ -48,6 +48,7 @@
             "state": {
               "type": "canvas",
               "state": {
+<<<<<<< HEAD
                 "file": "Terminal.canvas",
                 "viewState": {
                   "x": -237.66530704758463,
@@ -57,10 +58,22 @@
               },
               "icon": "lucide-layout-dashboard",
               "title": "Terminal"
+=======
+                "file": "Ubicacion.canvas",
+                "viewState": {
+                  "x": -390,
+                  "y": 270,
+                  "zoom": -0.20223622509331865
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Ubicacion"
+>>>>>>> origin/main
             }
           }
         ],
         "currentTab": 2
+<<<<<<< HEAD
       },
       {
         "id": "364c6966ff28ac00",
@@ -85,6 +98,8 @@
             }
           }
         ]
+=======
+>>>>>>> origin/main
       }
     ],
     "direction": "vertical"
@@ -107,7 +122,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -141,8 +156,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "44644666d27374db",
@@ -224,16 +238,17 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
     }
   },
   "active": "3882af2f917d6e4d",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "Deposito.canvas",
     "Terminal.canvas",
     "Maquina.canvas",
@@ -245,8 +260,20 @@
     "Untitled.canvas",
     "Ticket.canvas",
     "Ubicacion.canvas",
+=======
+>>>>>>> origin/main
     "Tipo Monedas.canvas",
-    "Nuevo documento de texto.canvas",
+    "Ticket.canvas",
+    "Terminal.canvas",
+    "Principal.canvas",
+    "Plano.canvas",
+    "Maquina.canvas",
+    "Deposito.canvas",
+    "Ubicacion.canvas",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "2025-03-01.md",
+    "Terminal.md",
     "Sin título.md",
     "Captura.png",
     "Bienvenido.md"
