@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Tipo Monedas.canvas",
+                "file": "Ubicacion.canvas",
                 "viewState": {
-                  "x": -30,
-                  "y": -125,
-                  "zoom": 0
+                  "x": -400,
+                  "y": 172.5,
+                  "zoom": -0.005378895864008432
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Tipo Monedas"
+              "title": "Ubicacion"
             }
           }
         ]
@@ -47,7 +47,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -163,25 +163,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
     }
   },
   "active": "17ae13bf196d735b",
   "lastOpenFiles": [
-    "Ubicacion.canvas",
-    "Untitled.canvas",
-    "Ticket.canvas",
     "Tipo Monedas.canvas",
+    "Ticket.canvas",
     "Terminal.canvas",
     "Principal.canvas",
+    "Plano.canvas",
     "Maquina.canvas",
     "Deposito.canvas",
-    "Plano.canvas",
-    "Untitled 1.canvas"
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "Ubicacion.canvas"
   ]
 }
