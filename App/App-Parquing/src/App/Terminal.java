@@ -47,15 +47,12 @@ public class Terminal extends javax.swing.JFrame {
 
         PagoYmas = new javax.swing.JPanel();
         BotonPagar = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        TestoAPagar = new javax.swing.JLabel();
+        TestoAInsertar = new javax.swing.JLabel();
         DineroPone = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
+        FinalizarPago = new javax.swing.JButton();
         Muestraprecio = new javax.swing.JLabel();
         Cambio = new javax.swing.JLabel();
-        OcupacionParking = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         Matricula = new javax.swing.JTextField();
         Tiket1 = new javax.swing.JButton();
@@ -71,14 +68,14 @@ public class Terminal extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("A pagar --->");
+        TestoAPagar.setText("A pagar --->");
 
-        jLabel3.setText("Inserta -->");
+        TestoAInsertar.setText("Inserta -->");
 
-        jButton1.setText("✔ ok");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        FinalizarPago.setText("✔ ok");
+        FinalizarPago.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                FinalizarPagoActionPerformed(evt);
             }
         });
 
@@ -90,70 +87,50 @@ public class Terminal extends javax.swing.JFrame {
         PagoYmas.setLayout(PagoYmasLayout);
         PagoYmasLayout.setHorizontalGroup(
             PagoYmasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PagoYmasLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(PagoYmasLayout.createSequentialGroup()
+                .addGap(81, 81, 81)
                 .addComponent(BotonPagar)
-                .addGap(92, 92, 92))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(PagoYmasLayout.createSequentialGroup()
                 .addGroup(PagoYmasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PagoYmasLayout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addGroup(PagoYmasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel2))
-                        .addGap(30, 30, 30)
-                        .addGroup(PagoYmasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(DineroPone)
-                            .addComponent(Muestraprecio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE))
+                        .addContainerGap()
+                        .addComponent(Cambio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(PagoYmasLayout.createSequentialGroup()
-                        .addGap(82, 82, 82)
-                        .addComponent(jButton1)))
-                .addContainerGap(18, Short.MAX_VALUE))
-            .addGroup(PagoYmasLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Cambio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(PagoYmasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(PagoYmasLayout.createSequentialGroup()
+                                .addGap(23, 23, 23)
+                                .addGroup(PagoYmasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(TestoAInsertar)
+                                    .addComponent(TestoAPagar))
+                                .addGap(30, 30, 30)
+                                .addGroup(PagoYmasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(DineroPone)
+                                    .addComponent(Muestraprecio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addGroup(PagoYmasLayout.createSequentialGroup()
+                                .addGap(77, 77, 77)
+                                .addComponent(FinalizarPago)))
+                        .addGap(0, 53, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         PagoYmasLayout.setVerticalGroup(
             PagoYmasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PagoYmasLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(14, 14, 14)
                 .addComponent(BotonPagar)
+                .addGap(18, 18, Short.MAX_VALUE)
+                .addGroup(PagoYmasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TestoAPagar)
+                    .addComponent(Muestraprecio))
                 .addGap(18, 18, 18)
                 .addGroup(PagoYmasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel4)
-                    .addComponent(Muestraprecio))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(PagoYmasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
+                    .addComponent(TestoAInsertar)
                     .addComponent(DineroPone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addGap(15, 15, 15)
+                .addComponent(FinalizarPago)
+                .addGap(18, 18, 18)
                 .addComponent(Cambio)
-                .addGap(40, 40, 40))
-        );
-
-        OcupacionParking.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout OcupacionParkingLayout = new javax.swing.GroupLayout(OcupacionParking);
-        OcupacionParking.setLayout(OcupacionParkingLayout);
-        OcupacionParkingLayout.setHorizontalGroup(
-            OcupacionParkingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(OcupacionParkingLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 268, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        OcupacionParkingLayout.setVerticalGroup(
-            OcupacionParkingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(OcupacionParkingLayout.createSequentialGroup()
-                .addGap(32, 32, 32)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(31, 31, 31))
         );
 
         jLabel1.setFont(new java.awt.Font("Rockwell", 0, 24)); // NOI18N
@@ -171,35 +148,32 @@ public class Terminal extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(PagoYmas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addComponent(Matricula, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(31, 31, 31)
-                        .addComponent(Tiket1))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(39, 39, 39)
-                        .addComponent(OcupacionParking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(26, Short.MAX_VALUE))
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(Matricula, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(59, 59, 59)
+                        .addComponent(Tiket1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addComponent(PagoYmas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(38, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel1)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(Matricula, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(Tiket1)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(OcupacionParking, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(PagoYmas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(49, 49, 49))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1)
+                .addGap(32, 32, 32)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Matricula, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Tiket1))
+                .addGap(18, 18, 18)
+                .addComponent(PagoYmas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(17, Short.MAX_VALUE))
         );
 
         pack();
@@ -226,62 +200,26 @@ public class Terminal extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_Tiket1ActionPerformed
 
-    private double total;
-    private int tiketNum;
-    
-    private void BotonPagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPagarActionPerformed
-        LocalDateTime salida = LocalDateTime.now();
-        double precioPorMinuto = 0.50;
-        String tiketId = JOptionPane.showInputDialog(this, "Introduce el ID del ticket: ");
-        
-        if (tiketId == null || tiketId.isEmpty()) {
+    private void FinalizarPagoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FinalizarPagoActionPerformed
+        // TODO add your handling code here:
+        String dinero = DineroPone.getText();
+
+        if (dinero == null || dinero.trim().isEmpty()) {
             JOptionPane.showMessageDialog(this, "No puede ser nula", "Nota", JOptionPane.WARNING_MESSAGE);
             return;
         }
-        
-        
+
+        double dineros;
         try {
-            tiketNum = Integer.parseInt(tiketId);
-        } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(this, "ID del ticket inválido", "Error", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-        
-        if (tiketNum < 0 || tiketNum > Ticket.getContador()) { 
-            JOptionPane.showMessageDialog(this, "Fuera de rango", "Error", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-
-        Ticket ticket = maquina.buscarTicket(tiketNum);
-        if (ticket == null) {
-            JOptionPane.showMessageDialog(this, "Ticket no encontrado", "Error", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-
-        Duration tiempoPasado = Duration.between(ticket.getFecha_hora(), salida);
-        long minutos = tiempoPasado.toMinutes();
-        total = minutos * precioPorMinuto;
-        if (minutos == 0) total = precioPorMinuto; // Mínimo 1 minuto de cobro
-        Muestraprecio.setText(total + "€");
-
-  
-    }//GEN-LAST:event_BotonPagarActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-         // TODO add your handling code here:
-        String dinero;
-
-        try {
-            dinero = DineroPone.getText();
+            dineros = Double.parseDouble(dinero);
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(this, "Cantidad de dinero inválida", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
 
-        double dineros = Double.parseDouble(dinero);
         double total = Double.parseDouble(Muestraprecio.getText().replace("€", ""));
         if (dineros < total) {
-            JOptionPane.showMessageDialog(this, "Cantidad de dinero inválida", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Cantidad de dinero insuficiente", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
 
@@ -311,8 +249,47 @@ public class Terminal extends javax.swing.JFrame {
                 plano.mostrarParking(); // Mostrar la ocupación del parking en la terminal
             }
         }).start();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_FinalizarPagoActionPerformed
 
+    private void BotonPagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPagarActionPerformed
+        LocalDateTime salida = LocalDateTime.now();
+        double precioPorMinuto = 0.50;
+        String tiketId = JOptionPane.showInputDialog(this, "Introduce el ID del ticket: ");
+
+        if (tiketId == null || tiketId.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "No puede ser nula", "Nota", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+
+        try {
+            tiketNum = Integer.parseInt(tiketId);
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "ID del ticket inválido", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+
+        if (tiketNum < 0 || tiketNum > Ticket.getContador()) {
+            JOptionPane.showMessageDialog(this, "Fuera de rango", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+
+        Ticket ticket = maquina.buscarTicket(tiketNum);
+        if (ticket == null) {
+            JOptionPane.showMessageDialog(this, "Ticket no encontrado", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+
+        Duration tiempoPasado = Duration.between(ticket.getFecha_hora(), salida);
+        long minutos = tiempoPasado.toMinutes();
+        total = minutos * precioPorMinuto;
+        if (minutos == 0) total = precioPorMinuto; // Mínimo 1 minuto de cobro
+        Muestraprecio.setText(total + "€");
+
+    }//GEN-LAST:event_BotonPagarActionPerformed
+
+    private double total;
+    private int tiketNum;
+    
     /**
      * @param args the command line arguments
      */
@@ -352,16 +329,13 @@ public class Terminal extends javax.swing.JFrame {
     private javax.swing.JButton BotonPagar;
     private javax.swing.JLabel Cambio;
     private javax.swing.JTextField DineroPone;
+    private javax.swing.JButton FinalizarPago;
     private javax.swing.JTextField Matricula;
     private javax.swing.JLabel Muestraprecio;
-    private javax.swing.JPanel OcupacionParking;
     private javax.swing.JPanel PagoYmas;
+    private javax.swing.JLabel TestoAInsertar;
+    private javax.swing.JLabel TestoAPagar;
     private javax.swing.JButton Tiket1;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     // End of variables declaration//GEN-END:variables
 }
