@@ -9,8 +9,8 @@ package App.Tiket_Plazas;
  */
 public class Ubicacion {
     
-    private int planta;
-    private int plaza;
+    private int planta; // numero de planta
+    private int plaza; //numero de plaza
 
     /**
      * Instantiates a new ubicacion.
