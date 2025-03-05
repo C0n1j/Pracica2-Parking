@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package App.Tiket_Plazas;
 // TODO: Auto-generated Javadoc
 
@@ -16,16 +12,12 @@ public class Ubicacion {
     private int planta;
     private int plaza;
 
-<<<<<<< HEAD
     /**
      * Instantiates a new ubicacion.
      *
      * @param planta the planta
      * @param plaza the plaza
      */
-    //constructor
-=======
->>>>>>> origin/main
     public Ubicacion(int planta, int plaza) {
         this.planta = planta;
         this.plaza = plaza;
