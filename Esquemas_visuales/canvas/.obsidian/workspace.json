@@ -1,119 +1,44 @@
 {
   "main": {
-    "id": "318519a7d0e2dc46",
+    "id": "71d241968e0600a2",
     "type": "split",
     "children": [
       {
-        "id": "d42b0f4ef82daaaa",
+        "id": "7ebdb678e92c4056",
         "type": "tabs",
-        "dimension": 62.881097560975604,
         "children": [
           {
-            "id": "14679d0372d4e6ff",
+            "id": "17ae13bf196d735b",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Plano.canvas",
+                "file": "Tipo Monedas.canvas",
                 "viewState": {
-                  "x": -2.9604468423586816,
-                  "y": 456.0646138061361,
-                  "zoom": -1.6991589446862534
+                  "x": -30,
+                  "y": -125,
+                  "zoom": 0
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Plano"
-            }
-          },
-          {
-            "id": "e335a295e0e7bd66",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Principal.canvas",
-                "viewState": {
-                  "x": 13.143776269956163,
-                  "y": 347.7006532587254,
-                  "zoom": -1.2092725578951293
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Principal"
-            }
-          },
-          {
-            "id": "3882af2f917d6e4d",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-<<<<<<< HEAD
-                "file": "Terminal.canvas",
-                "viewState": {
-                  "x": -237.66530704758463,
-                  "y": 304.68128836214515,
-                  "zoom": -1.3715336326758067
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Terminal"
-=======
-                "file": "Ubicacion.canvas",
-                "viewState": {
-                  "x": -390,
-                  "y": 270,
-                  "zoom": -0.20223622509331865
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Ubicacion"
->>>>>>> origin/main
-            }
-          }
-        ],
-        "currentTab": 2
-<<<<<<< HEAD
-      },
-      {
-        "id": "364c6966ff28ac00",
-        "type": "tabs",
-        "dimension": 37.118902439024396,
-        "children": [
-          {
-            "id": "4a878f08087013db",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Deposito.canvas",
-                "viewState": {
-                  "x": -165,
-                  "y": -180,
-                  "zoom": -1.0267031561999143
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Deposito"
+              "title": "Tipo Monedas"
             }
           }
         ]
-=======
->>>>>>> origin/main
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "7d3f3ef197d4bec1",
+    "id": "9eb91c2b0e67df94",
     "type": "split",
     "children": [
       {
-        "id": "c5fd6fa5e47011ac",
+        "id": "1e4606202391b9c6",
         "type": "tabs",
         "children": [
           {
-            "id": "c82748086aad3954",
+            "id": "f2d93fc885287980",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -122,11 +47,11 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
+              "title": "Files"
             }
           },
           {
-            "id": "5cb8dd7810e15e74",
+            "id": "3af9ece8deaf92d0",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -139,40 +64,40 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Buscar"
+              "title": "Search"
             }
           },
           {
-            "id": "2aca8437ba550a03",
+            "id": "52f8f98e2d285896",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Marcadores"
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "44644666d27374db",
+    "id": "31cde2c11dbffeb9",
     "type": "split",
     "children": [
       {
-        "id": "9dc69e4e99f2acc1",
+        "id": "4bda554fdd69df16",
         "type": "tabs",
         "children": [
           {
-            "id": "def0767afd37ffbc",
+            "id": "ab84f5669f4a56cf",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sin título.canvas",
+                "file": "Tipo Monedas.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,25 +107,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Sin título"
+              "title": "Backlinks for Tipo Monedas"
             }
           },
           {
-            "id": "1951e847268c8277",
+            "id": "d0cddbb58cc346ec",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sin título.canvas",
+                "file": "Tipo Monedas.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Sin título"
+              "title": "Outgoing links from Tipo Monedas"
             }
           },
           {
-            "id": "2a794a3cef13c6a1",
+            "id": "ccd7ecf5c2405040",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -211,22 +136,22 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Etiquetas"
+              "title": "Tags"
             }
           },
           {
-            "id": "263ab9a55797f5e2",
+            "id": "347db5f1732cbd60",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sin título.canvas",
+                "file": "Tipo Monedas.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Sin título"
+              "title": "Outline of Tipo Monedas"
             }
           }
         ]
@@ -238,44 +163,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
     }
   },
-  "active": "3882af2f917d6e4d",
+  "active": "17ae13bf196d735b",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "Deposito.canvas",
-    "Terminal.canvas",
-    "Maquina.canvas",
-    "Terminal.md",
-    "Untitled 1.canvas",
-    "Plano.canvas",
-    "Principal.canvas",
-    "2025-03-01.md",
+    "Ubicacion.canvas",
     "Untitled.canvas",
     "Ticket.canvas",
-    "Ubicacion.canvas",
-=======
->>>>>>> origin/main
     "Tipo Monedas.canvas",
-    "Ticket.canvas",
     "Terminal.canvas",
     "Principal.canvas",
-    "Plano.canvas",
     "Maquina.canvas",
     "Deposito.canvas",
-    "Ubicacion.canvas",
-    "Untitled.canvas",
-    "Untitled 1.canvas",
-    "2025-03-01.md",
-    "Terminal.md",
-    "Sin título.md",
-    "Captura.png",
-    "Bienvenido.md"
+    "Plano.canvas",
+    "Untitled 1.canvas"
   ]
 }

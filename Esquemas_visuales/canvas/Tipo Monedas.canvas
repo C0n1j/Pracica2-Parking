@@ -1,8 +1,8 @@
 {
 	"nodes":[
-		{"id":"fb3b8d080b2f39dc","x":-120,"y":-320,"width":200,"height":50,"color":"4","type":"text","text":"Tipo Monedas"},
-		{"id":"d39d05b55ceaa41d","x":-480,"y":-200,"width":400,"height":270,"color":"6","type":"text","text":"**Métodos principales**:\n\n- `getCantidad(valor)`: Devuelve la cantidad de una moneda específica.\n- `agregarMoneda(valor, cantidad)`: Agrega monedas/billetes al depósito.\n- `retirarMoneda(valor, cantidad)`: Resta monedas/billetes si hay suficiente cantidad"},
-		{"id":"437ee70e1af9f561","x":100,"y":-200,"width":320,"height":240,"color":"2","type":"text","text":"**Atributos**:\n\n- `valores`: Array con los valores de las monedas/billetes.\n- `cantidades`: Array con la cantidad de cada moneda/billete disponible."}
+		{"id":"fb3b8d080b2f39dc","type":"text","text":"Tipo Monedas","x":-120,"y":-320,"width":200,"height":50,"color":"4"},
+		{"id":"d39d05b55ceaa41d","type":"text","text":"**Métodos principales**:\n\n- `getCantidad(valor)`devuelve la cantidad de una moneda específica.\n- `agregarMoneda(valor, cantidad)`agrega monedas/billetes al depósito.\n- `retirarMoneda(valor, cantidad)`resta monedas/billetes si hay suficiente cantidad.","x":-480,"y":-200,"width":400,"height":270,"color":"6"},
+		{"id":"437ee70e1af9f561","type":"text","text":"**Atributos**:\n\n- `valores`array con los valores de las monedas/billetes.\n- `cantidades`array con la cantidad de cada moneda/billete disponible.","x":100,"y":-200,"width":320,"height":240,"color":"2"}
 	],
 	"edges":[
 		{"id":"1c3c64fca8ba8898","fromNode":"fb3b8d080b2f39dc","fromSide":"right","toNode":"437ee70e1af9f561","toSide":"top"},

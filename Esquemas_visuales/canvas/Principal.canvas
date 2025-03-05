@@ -1,9 +1,9 @@
 {
 	"nodes":[
 		{"id":"a7f314b8a6a09c43","type":"text","text":"Principal","x":-120,"y":-20,"width":250,"height":60,"color":"4"},
-		{"id":"d0ea1c9065cd4a24","type":"text","text":"### **Métodos**\n\n#### `public static void main(String[] args)`\n\n- Crea un objeto de tipo `Terminal` (`terminal = new Terminal();`).\n- Hace visible la ventana asociada al objeto `terminal` (`terminal.setVisible(true);`).","x":-800,"y":-120,"width":600,"height":240,"color":"6"},
-		{"id":"70754cdf4079f8ee","type":"text","text":"### **Atributos**\n\n- `static Terminal terminal;` al hacerlo de forma estatico, la clase terminal pertenece a la clase principal y no a un objeto","x":200,"y":-75,"width":440,"height":230,"color":"2"},
-		{"id":"d89b9c5bd971db77","type":"text","text":"### Dependencias:\n\n- La clase depende de una clase llamada `Terminal`,un  `JFrame`.\n- Utiliza el método `setVisible`,para visualizar la clase `Terminal`.","x":-400,"y":280,"width":680,"height":160,"color":"3"}
+		{"id":"d0ea1c9065cd4a24","type":"text","text":"### **Métodos**\n\n#### `public static void main(String[] args)`\n\n- Crea un objeto de tipo `Terminal` (`terminal = new Terminal();`).\n- Hace visible la ventana asociada al objeto `terminal` (`terminal.setVisible(true);`).","x":-800,"y":-110,"width":600,"height":240,"color":"6"},
+		{"id":"d89b9c5bd971db77","type":"text","text":"### **Dependencias**:\n\n- La clase depende de una clase llamada `Terminal`,un  `JFrame`.","x":-292,"y":280,"width":595,"height":120,"color":"3"},
+		{"id":"70754cdf4079f8ee","type":"text","text":"### **Atributos**\n\n- `static Terminal terminal;` al hacerlo de forma estatico, la clase terminal pertenece a la clase principal y no a un objeto","x":200,"y":-62,"width":440,"height":145,"color":"2"}
 	],
 	"edges":[
 		{"id":"0627a146ea203ca9","fromNode":"a7f314b8a6a09c43","fromSide":"right","toNode":"70754cdf4079f8ee","toSide":"left"},
