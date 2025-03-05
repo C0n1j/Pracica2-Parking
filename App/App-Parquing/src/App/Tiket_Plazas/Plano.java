@@ -14,14 +14,13 @@ package App.Tiket_Plazas;
  */
 public class Plano {
 
-
-
     /** The plazas. */
 
     private int[][] plazas; 
 
     /**
      * Instantiates a new plano.
+     * creamos el plano al que posteriormente le damos los datos
      */
     public Plano() {
         plazas = new int[3][20]; //3 plantas(son las filas), 20 plazas(son las columnas)
@@ -29,6 +28,7 @@ public class Plano {
 
     /**
      * Estacionar.
+     * 
      *
      * @param ticketId the ticket id
      * @return Ubicacion, if successful
@@ -36,15 +36,15 @@ public class Plano {
 // Busca la primera plaza libre y devuelve la ubicación
 
     public Ubicacion estacionar(int ticketId) {
-        for (int planta = 0; planta < plazas.length; planta++) {
-            for (int plaza = 0; plaza < plazas[planta].length; plaza++) {
+        for (int planta = 0; planta < plazas.length; planta++) {//recorremos la planta
+            for (int plaza = 0; plaza < plazas[planta].length; plaza++) { //recorremos las plazas
                 if (plazas[planta][plaza] == 0) { // si la plaza esta libre
                     plazas[planta][plaza] = ticketId; // se ocupa esa plaza con el id del ticket
-                    return new Ubicacion(planta, plaza);
+                    return new Ubicacion(planta, plaza);//devuelve la ubicacion(plaza y piso)
                 }
             }
         }
-        return null; // Parking lleno
+        return null; // No asigna ubicacion si el parking está lleno
     }
 
     /**
@@ -55,15 +55,15 @@ public class Plano {
      */
     // Libera una plaza cuando el coche se va
     public boolean liberar(int ticketId) {
-        for (int planta = 0; planta < plazas.length; planta++) {
-            for (int plaza = 0; plaza < plazas[planta].length; plaza++) {
+        for (int planta = 0; planta < plazas.length; planta++) {//recorremos la planta
+            for (int plaza = 0; plaza < plazas[planta].length; plaza++) {//recorremos las plazas
                 if (plazas[planta][plaza] == ticketId) { // si encontramos el tiket...
                     plazas[planta][plaza] = 0; // esa plaza encontrada vuelve a 0, la liberamos para el siguiente
-                    return true;
+                    return true; 
                 }
             }
         }
-        return false; 
+        return false; //no encuentra el ticket
     }
 
     /**
@@ -71,7 +71,7 @@ public class Plano {
      */
     public void mostrarParking() {
         for (int[] planta : plazas) {
-            System.out.println(Arrays.toString(planta));
+            System.out.println(Arrays.toString(planta)); //vemos el estado del parking
         }
     }
 }
