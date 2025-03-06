@@ -29,6 +29,8 @@
 Nicolás → 6 Horas y 34 minutos
 <br>
 Andrei → 6 Horas y 47 minutos
+<br>
+Total -> 13 horas y 21 minutos
 
 ## Tiepo imbertido 
 
