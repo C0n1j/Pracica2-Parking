@@ -40,5 +40,4 @@ El repositorio está compuesto por varias carpetas:
 
 Dentro de la carpeta hay una clase java que se llama `principal` que hay que ejecutar para que se cargue la app
 
->[!TIP]
-> Emos tenido barios problemas a la hora de trabajar ya que en el ordenador de Nicolás si que el ejecutaba la aplicacion, pero en el de Andrei en cierto punto del proyecto no le ejecutaba y despues de probar en clase también dava error por lo que hemos decidido gravar un [video](Ejemplo%20Funcionamiento.mp4) que demuestre el funcionamiento. No entendemos cual es la causa del error porque el codigo esta bien.
+
