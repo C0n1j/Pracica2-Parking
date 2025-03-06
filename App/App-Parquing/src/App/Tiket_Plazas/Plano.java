@@ -59,7 +59,6 @@ public class Plano {
             for (int plaza = 0; plaza < plazas[planta].length; plaza++) {//recorremos las plazas
                 if (plazas[planta][plaza] == ticketId) { // si encontramos el tiket...
                     plazas[planta][plaza] = 0; // esa plaza encontrada vuelve a 0, la liberamos para el siguiente
-                    planta--;
                     plaza--;
                     return true; 
                 }
