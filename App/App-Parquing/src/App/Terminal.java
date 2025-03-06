@@ -177,10 +177,13 @@ public class Terminal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Tiket1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Tiket1ActionPerformed
-         String matricula = Matricula.getText();
+        String matricula = Matricula.getText();
+        String patronMatricula = "^[0-9]{4}-[A-Z]{3}$";
         if (matricula.isEmpty()) {
             JOptionPane.showMessageDialog(this, "No puede ser nula", "Nota", JOptionPane.WARNING_MESSAGE);
-        } else {
+        }else if (!matricula.matches(patronMatricula)) {
+        JOptionPane.showMessageDialog(this, "Formato de matrícula inválido. Debe ser 1234-ABC", "Error", JOptionPane.ERROR_MESSAGE);
+        }else {
             Ticket ticket = maquina.generarTicket(matricula);
             if (ticket != null) {
                 JOptionPane.showMessageDialog(this, " Ticket generado: " + ticket, "Ticket", JOptionPane.INFORMATION_MESSAGE);
