@@ -21,18 +21,17 @@
 |Esquema Terminal|Andrei|04/03/2025/9:22|04/03/2025/9:45|23min|
 |Integración parcial de la ocupación + ajustes código para implementación |Nicolás|04/03/2025/13:10|04/03/2025/14:20|1h 20m|
 |Arreglos de código, ajustes readme, rediseño terminal + añadir graficos tiempo| Nicolás|05/03/2025/16:35|05/03/2025/17:35|1h|
-
+|Arreglo codigos para finalizar la practica con extio| Nicolás y Andrei|06/03/2025/9:30|06/03/2025/10:50|1h 20m|
 
 
 ## Total de tiempos
 
-Nicolás → 6 Horas y 34 minutos
+Nicolás → 6 Horas y 34 Minutos
 <br>
-Andrei → 6 Horas y 47 minutos
+Andrei → 6 Horas y 47 Minutos
 <br>
-Total -> 13 horas y 21 minutos
+Doble participación → 1 Hora y 20 Minutos
+<br>
+Total -> 14 horas y 41 minutos
 
-## Tiepo imbertido 
 
-![Grafico](Anexos/GrafigoTiempoTotal.png)
->En minutos
