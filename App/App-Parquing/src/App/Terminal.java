@@ -240,7 +240,7 @@ public class Terminal extends javax.swing.JFrame {
             carga.dispose(); // Cierra la barra de progreso una vez completado el pago
 
             // Procesar el pago y liberar el ticket
-            maquina.pagarTicket((int) total, (int) dineros);
+            maquina.pagarTicket(tiketNum, dineros);
             double cambio = dineros - total;
             Cambio.setText("Cambio: " + cambio + "€. Hasta pronto");
             if (plano.liberar((int) total)) { // Liberar la plaza en el plano
@@ -251,10 +251,11 @@ public class Terminal extends javax.swing.JFrame {
         }).start();
     }//GEN-LAST:event_FinalizarPagoActionPerformed
 
+    protected String tiketId;
     private void BotonPagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPagarActionPerformed
         LocalDateTime salida = LocalDateTime.now();
         double precioPorMinuto = 0.50;
-        String tiketId = JOptionPane.showInputDialog(this, "Introduce el ID del ticket: ");
+        tiketId = JOptionPane.showInputDialog(this, "Introduce el ID del ticket: ");
 
         if (tiketId == null || tiketId.isEmpty()) {
             JOptionPane.showMessageDialog(this, "No puede ser nula", "Nota", JOptionPane.WARNING_MESSAGE);

@@ -41,8 +41,8 @@ public class Maquina {
     public boolean pagarTicket(int ticketId, double cantidadIntroducida) {
         Ticket ticket = buscarTicket(ticketId);
         if (ticket == null) {
-            System.out.println(" Ticket no encontrado.");
-            return false;
+            System.out.println("No puede ser nulo");
+          return false;
         }
 
         long minutos = java.time.Duration.between(ticket.getFecha_hora(), java.time.LocalDateTime.now()).toMinutes();
